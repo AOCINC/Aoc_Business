@@ -3,7 +3,7 @@ from Aoc_Business_LandingApp import views
 
 
 urlpatterns = [
-    path('Home', views.index_view, name = 'Home'),
+    path('', views.index_view, name = 'Home'),
     path('Projects-Info', views.projects_info, name = 'Projects_Info'),
     path('Privacy-policy', views.privacy_policy, name = 'Privacy_policy'),
     path('Terms-Conditions', views.Terms_Conditions, name = 'Terms_Conditions'),
