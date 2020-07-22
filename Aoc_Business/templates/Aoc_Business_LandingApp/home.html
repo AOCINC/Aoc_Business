@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+{% extends 'Aoc_Business_LandingApp/base.html' %}
+{% load static %}
+{% block content %}
+<br><br>
+<!-- first div -->
+<div id="first-div">
+  <div class="">
+    <div class="row">
+      <div class="col-md-8"><br>
+        <h2>Welcome To AOCINC </h2>
+        <h5>
+          <!-- OUR MISSION <br> -->
+          <br>
+          To help people educate and do yourself and make the system work better for everyone.
+        </h5>
+        <small>
+          ALL ON CROWD(AOC) gives you a platform to speed up your goals and flexibility in your learning and earning 
+          and explore your demands, We will provide you a portal to learn from home and work from home. 
+          We are trying to help the crowd to learn and earn from our services. Learn from our own partner website 
+          ULearnSolutions.com and earn from ULSHUB.com by working from home.
+        </small>
+        <br><br>
+        <!-- <a href="http://aocinc.pythonanywhere.com/">
+          <button class="btn btn"id="explore-btn"> Explore</button>
+        </a> -->
+      </div>
+      <div class="col-md-4">
+        <img src="{% static "images/landing_pic1.png"%}" class="img" alt="Responsive image" style="height: 250px; width: 317px;">
+      </div>
+    </div>
+  </div>
+</div>  
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#5000ca" fill-opacity="1" d="M0,96L80,117.3C160,139,320,181,480,202.7C640,224,800,224,960,208C1120,192,1280,160,1360,144L1440,128L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+<!-- first div end -->
+
+<!-- second div -->
+<div class="container text-center" id="second-div">
+  <div class="row">
+    <div class="col-md-4">
+      <a href="{% url 'Projects_Info' %}">
+        <img id="div2-imgs" src="{% static "images/project.png" %}" alt="">
+          <h4>Our Products</h4>
+      </a>
+      <strong>Opportunities for freelancer, Implement your skills and get paid on execution</strong>
+    </div>
+    <div class="col-md-4">
+      <a href="http://aocinc.pythonanywhere.com/List-Meetings" target= "_blank">
+        <img  id="div2-imgs" src="{% static "images/live_img.png" %}" alt="">      
+          <h4>Live Sessions</h4>
+      </a>
+      <strong>Whether that be in the classroom, self paced or delivered via the web, we pride ourselves on making sure you understand the topic</strong>
+    </div>
+    <div class="col-md-4">
+      <a href="http://aocinc.pythonanywhere.com/subjects-dashboard" target="_blank">
+        <img  id="div2-imgs"src="{% static "images/self_learning.png" %}" alt="">
+          <h4>Self Learning</h4>
+      </a>
+      <strong>We Understand That Everyone Is Different When It Comes To Learning. We Provide You Free Courses</strong>
+    </div>
+  </div>
+</div>
+<br><br><br>
+<!-- second div ends here -->
+
+<div>
+  <div id="second-2-div">
+    <div class="container"> 
+      <h3> OUR VALUES</h3> <br><br>
+      <h4>  
+      <strong>
+          Learning, Integrity, Relationships, Innovation and Performance
+        </strong>
+      </h4>
+      <small>
+        At AOCINC, we are calling to build our future, To design. To code. To consult. To think along with clients and sell To make markets. To invent. To collaborate. Not just to do something better, But to attempt things you've never thought possible.
+        <br><br>
+        To lead in this new era of technology and solve some of the world's most challenging problems. <br><br>
+        we focused on improving affordability, quality and efficiency. AOCINC has been operating in India since 2018.
+
+      </small>
+    </div>
+
+  </div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#5000ca" fill-opacity="1" d="M0,320L48,293.3C96,267,192,213,288,176C384,139,480,117,576,117.3C672,117,768,139,864,160C960,181,1056,203,1152,213.3C1248,224,1344,224,1392,224L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+</div>
+
+
+
+
+
+
+<!-- Third div  -->
+
+<br><br><br>
+<div id="third-div">
+<div class="container" >
+    <br><br>
+    
+    <div class="row">
+        <div class="col-sm">
+            <button class="btn btn-primary btn-block">
+                We Are Offering
+            </button>
+            <br><br>
+            <ul class="list-group">
+                <li class="list-group-item"> <i class="far fa-check-circle"></i> &nbsp;Manual Functional Tesing</li>
+                <li class="list-group-item"> <i class="far fa-check-circle"></i> &nbsp;Automated Functional Testing</li>
+                <li class="list-group-item"> <i class="far fa-check-circle"></i> &nbsp;User Experience Testing</li>
+                <li class="list-group-item"> <i class="far fa-check-circle"></i> &nbsp;Payment Testing</li>
+                <li class="list-group-item"><i class="far fa-check-circle"></i> &nbsp;Voice Testing</li>
+              </ul>
+        </div>
+    <div class="col-sm">
+        <button class="btn btn-dark btn-block">
+            By Technology
+        </button>
+        <br><br>
+            <ul class="list-group">
+                <li class="list-group-item"> <i class="far fa-check-circle"></i> &nbsp;Website</li>
+                <li class="list-group-item"> <i class="far fa-check-circle"></i> &nbsp;IOS Apps</li>
+                <li class="list-group-item"> <i class="far fa-check-circle"></i> &nbsp;Android Apps</li>
+                <li class="list-group-item"> <i class="far fa-check-circle"></i> &nbsp; Desktop Apps</li>
+                <!-- <li class="list-group-item"><i class="far fa-check-circle"></i> &nbsp;</li> -->
+              </ul>
+    </div>
+      <div class="col-sm">
+        <button class="btn btn-danger btn-block">
+            By Industry
+        </button>
+        <br><br>
+            <ul class="list-group">
+                <li class="list-group-item"> <i class="far fa-check-circle"></i> &nbsp;Retail</li>
+                <li class="list-group-item"> <i class="far fa-check-circle"></i> &nbsp;Travel</li>
+                <li class="list-group-item"> <i class="far fa-check-circle"></i> &nbsp;Hosplitality</li>
+                <li class="list-group-item"> <i class="far fa-check-circle"></i> &nbsp; Media</li>
+                <li class="list-group-item"><i class="far fa-check-circle"></i> &nbsp;Education</li>
+              </ul>
+    </div>
+    </div>
+  </div>
+</div>
+  <br><br>
+
+
+
+
+
+
+<!-- Third div ends -->
+<!-- footer  -->
+
+<!-- Footer -->
+<footer id="footer-block" class="page-footer font-small unique-color-dark">
+
+  <div style="background-color: orangered;">
+    <div class="container">
+
+      <!-- Grid row-->
+      <div class="row py-4 d-flex align-items-center">
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0 ">
+          <h6 class="mb-0" style="color: #ffffff;">Get connected with us on social networks!</h6>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div id="social-icons" class="col-md-6 col-lg-7 text-center text-md-right">
+
+          <!-- Facebook -->
+          <a  class="fb-ic">
+            <a id="facebook-icons" href="https://www.facebook.com/aocinc.uls" target="_blank"> <i class="fab fa-facebook-f white-text mr-4"> </i></a>
+          </a>
+          <!-- Twitter -->
+          <a class="tw-ic">
+            <a id="facebook-icons" href="https://twitter.com/Aocinc_uls" target="_blank"> <i class="fab fa-twitter white-text mr-4"> </i></a>
+          </a>
+          <!--Linkedin -->
+          <a class="li-ic">
+            <a id="facebook-icons" href="https://www.linkedin.com/in/aoc-inc-pvt-ltd-84645319a/" target="_blank">  <i class="fab fa-linkedin-in white-text mr-4"> </i></a>
+          </a>
+          <!--Instagram-->
+          <a class="ins-ic">
+            <a id="facebook-icons" href="https://www.instagram.com/ulearnsolutions/" target="_blank">  <i class="fab fa-instagram white-text"> </i></a>
+          </a>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+
+    </div>
+  </div>
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5">
+
+    <!-- Grid row -->
+    <div class="row mt-3">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+
+        <!-- Content -->
+        <h6 id="brand-footer" class="text-uppercase font-weight-bold">AOCINC</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>Community Of Developers And Testers.</p>
+        <a href="{% url 'Privacy_policy' %}"><button  class="btn btn-outline-danger">Privacy Policy</button></a>
+        <br><br>
+        <a href="{% url 'Terms_Conditions' %}"> <button  class="btn btn-outline-danger">Terms & Conditions</button></a><br><br>
+        <a href="{% url 'Disclaimer' %}"> <button  class="btn btn-outline-danger">Disclaimer</button></a>
+
+
+
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div id="footer-resource" class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Resources</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a href="">Free Courses</a>
+        </p>
+        <p>
+          <a href="">Live Sessions</a>
+        </p>
+        <p>
+          <a href="http://ulsforbusiness.pythonanywhere.com/" target = "_blank">Tutors</a>
+        </p>
+        <p>
+          <a href="">Discussions</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div id="footer-useful-links" class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a href=""></a>
+        </p>
+        <p>
+          <a href=""></a>
+        </p>
+        <p>
+          <a href="#!"></a>
+        </p>
+        <p>
+          <a href="#!">Careers</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div  class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold">Contact</h6>
+        <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <i class="far fa-building"></i> HYDERABAD,INDIA</p>
+        <p>
+          <i class="fas fa-envelope mr-3"></i>aocinc.in@gmail.com</p>
+        <p>
+          <i class="fas fa-phone mr-3"></i> + 91 72 86 953 566</p>
+        <p>
+          <a href="https://api.whatsapp.com/send?phone=917286953566&text=" style="text-decoration:none" target="_blank"> 
+            <button class="btn btn-success"  > 
+              <i class="fab fa-whatsapp"></i> WhatsApp
+            </button>
+          </a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3" style="background-color: black;color: #ffffff;">© 2020 Copyright. All Rights Reserved
+    <a id="brand-footer" href=""> AOCINC PVT. &nbsp;LTD.</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+
+
+
+
+
+<!-- footer end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}
