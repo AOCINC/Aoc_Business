@@ -115,6 +115,7 @@ html{
 #third-div{
     padding: 5%;
 
+
 }
 #second-2-div h3 {
     color:#ffffff;
@@ -122,3 +123,64 @@ html{
 #second-2-div strong{
     color: #ffffff;
 }
+/* third div new pricing div */
+/* ==============
+  Pricing
+===================*/
+.col-lg-3 .card-block{
+    box-shadow: 0 8px 6px -6px black;
+
+}
+
+.plan-card .plan-icon {
+    display: inline-block;
+    font-size: 35px;
+    width: 100px;
+    height: 100px;
+    color: #ffffff;
+    line-height: 76px;
+    overflow: hidden;
+    border: 12px solid #ffffff;
+    border-radius: 50%;
+    background: #67a8e4;
+    box-shadow: 0 0 3px #cccccc;
+    transition: all .3s;
+}
+
+.plan-card .plan-price span {
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+.plan-card .plan-features p {
+    line-height: 32px;
+}
+
+.bg-pink {
+    background-color: #f06292 !important;
+}
+
+.bg-teal {
+    background-color: #009688 !important;
+}
+
+.text-pink {
+    color: #f06292 !important;
+}
+
+.text-teal {
+    color: #009688 !important;
+}
+
+.btn-pink {
+    background-color: #f06292;
+    border: 1px solid #f06292;
+    color: #ffffff;
+}
+
+.btn-teal {
+    background-color: #009688;
+    border: 1px solid #009688;
+    color: #ffffff;
+}
+/* third div new pricing div end */
