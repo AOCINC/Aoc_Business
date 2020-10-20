@@ -53,13 +53,21 @@ html{
 }
 #first-div h2{
     color:#ffffff;
+    font-family: 'Red Rose', cursive;
+
 }
 #first-div h5{
     color: #ffffff;
+    font-family: 'Red Rose', cursive;
+
 }
-#first-div small{
+#first-div p{
     color:#ffffff;
+    font-family: 'Red Rose', cursive;
+    font-size: 15px;
+
 }
+
 #first-div svg{
     border-top: none;
 }
@@ -70,6 +78,23 @@ html{
     padding:1% 8%;
     color:#ffffff;
 }
+#landing-pricing{
+    /* margin-top:10%; */
+    posistion:fixed;
+}
+.website-plan-head{
+    border-right: 15px solid #fc7304;
+    border-left: 15px solid #fc7304;
+    border-top-right-radius: 5px;
+    border-top-left-radius:5px;
+    background-color:rgb(119, 17, 109);
+    color: #ffffff;
+    font-family: 'Red Rose', cursive;
+    padding: 2%;
+
+}
+
+
 
 #second-div{
     /* background: brown; */
@@ -80,6 +105,16 @@ html{
 #second-2-div{
     background:#5000ca ;
     padding: 5%;
+}
+#second-2-div h3{
+    font-family: 'Red Rose', cursive;
+}
+#second-2-div h4{
+    font-family: 'Red Rose', cursive;
+}
+#second-2-div p{
+    font-family: 'Red Rose', cursive;
+    color: #ffffff;
 }
 #sec-div2 #svg2{
     border-top:none;
