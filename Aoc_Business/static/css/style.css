@@ -18,7 +18,7 @@
 .navbar .nav-link{
     color:#5000ca;
     /* color:#ffffff; */
-    font-family: 'Red Rose', cursive;
+    /* font-family: 'Red Rose', cursive; */
 
 }
 #brand-name{
@@ -53,17 +53,17 @@ html{
 }
 #first-div h2{
     color:#ffffff;
-    font-family: 'Red Rose', cursive;
+    /* font-family: 'Red Rose', cursive; */
 
 }
 #first-div h5{
     color: #ffffff;
-    font-family: 'Red Rose', cursive;
+    /* font-family: 'Red Rose', cursive; */
 
 }
 #first-div p{
     color:#ffffff;
-    font-family: 'Red Rose', cursive;
+    /* font-family: 'Red Rose', cursive; */
     font-size: 15px;
 
 }
@@ -83,13 +83,11 @@ html{
     posistion:fixed;
 }
 .website-plan-head{
-    border-right: 15px solid #fc7304;
-    border-left: 15px solid #fc7304;
     border-top-right-radius: 5px;
     border-top-left-radius:5px;
     background-color:rgb(119, 17, 109);
     color: #ffffff;
-    font-family: 'Red Rose', cursive;
+    /* font-family: 'Red Rose', cursive; */
     padding: 2%;
 
 }
@@ -99,7 +97,7 @@ html{
 #second-div{
     /* background: brown; */
     padding: 7%;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
 
 }
 #second-2-div{
@@ -107,13 +105,13 @@ html{
     padding: 5%;
 }
 #second-2-div h3{
-    font-family: 'Red Rose', cursive;
+    /* font-family: 'Red Rose', cursive; */
 }
 #second-2-div h4{
-    font-family: 'Red Rose', cursive;
+    /* font-family: 'Red Rose', cursive; */
 }
 #second-2-div p{
-    font-family: 'Red Rose', cursive;
+    /* font-family: 'Red Rose', cursive; */
     color: #ffffff;
 }
 #sec-div2 #svg2{
