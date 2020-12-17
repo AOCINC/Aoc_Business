@@ -1,219 +1,52 @@
-.navbar-toggler .navbar-toggler-icon{
-    border-color:grey;
-    background-image: url("/static/images/menu1.png")
-    /* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); */
-
-    /* background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); */
-    /* background-image:url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(9,55,244, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); */
-}
-
-
-.navbar {
-    /* background: rgb(59,47,249);
-    background: linear-gradient(90deg, rgba(59,47,249,1) 0%, rgba(30,30,255,1) 50%, rgba(156,0,255,1) 94%); */
-    /* background: #5000ca; */
-    background: #ffffff;
-    border-bottom: none;
-}
-.navbar .nav-link{
-    color:#5000ca;
-    /* color:#ffffff; */
-    /* font-family: 'Red Rose', cursive; */
+/* NAVBAR  */
+.navbar{
+    background:#fff;
+    box-shadow: 0 8px 6px -6px rgb(233, 225, 225);
 
 }
-#brand-name{
-    font-size:30px;
-    color:#ffffff;
-    /* font-family: 'Michroma', sans-serif; */
-    height: 150px;
+#navbrand{
+    color:rgb(2, 34, 138);
+    font-size:40px;
+    font-weight:bold;
+    letter-spacing: -8px;
+    font-style:italic;
+    font-family: "Roboto", "Lucida Grande", Verdana, Arial, sans-serif;
+    
+}
+.nav-item .nav-link{
+    color:gray;
+    font-weight:bold;
+    letter-spacing: 1px; 
+    
 
 }
-#brand img{
-    height: 50px;
-}
-.navbar .nav-link,
-.navbar .nav-link:after,
-.navbar .nav-link:before {
-  transition: all .5s;
-}
-.navbar .nav-link:hover {
-  color: #FF8B00;
-}
-
-
-
-html{
-    scroll-behavior: smooth;
-}
-#first-div{
-    /* background: rgb(59,47,249);
-    background: linear-gradient(90deg, rgba(59,47,249,1) 0%, rgba(30,30,255,1) 50%, rgba(156,0,255,1) 94%);    */
-    background: #5000ca;
-    padding: 15%;
-}
-#first-div h2{
-    color:#ffffff;
-    /* font-family: 'Red Rose', cursive; */
+.nav-link span{
+    background:rgb(72, 204, 149);
+    margin-top:-8px;
+    color:rgb(253, 253, 253);
+    font-weight: bold;
+    border-radius:20px;
 
 }
-#first-div h5{
-    color: #ffffff;
-    /* font-family: 'Red Rose', cursive; */
+.nav-link span:hover{
+    background:rgb(63, 163, 122); ;
+}
+.nav-item .dropdown-menu{
+    margin-top:21px;
+    box-shadow: 0 4px 4px 2px rgb(233, 225, 225);
+    border-radius:0px;
 
 }
-#first-div p{
-    color:#ffffff;
-    /* font-family: 'Red Rose', cursive; */
-    font-size: 15px;
+.nav-item .dropdown-menu .dropdown-item:hover{
+    background: rgb(219, 215, 215);
+}
+.dropdown-menu .dropdown-item{
+    color:gray;
+    font-weight:600;
+}
+#custom-nav .navbar-toggler-icon{
+    background-image: url("/static/images/menu.png");
 
 }
 
-#first-div svg{
-    border-top: none;
-}
-#explore-btn{
-    background: rgb(182,0,0);
-    background: linear-gradient(90deg, rgba(182,0,0,1) 0%, rgba(255,123,0,1) 87%, rgba(255,123,0,1) 94%);
-    border-radius: 50px;
-    padding:1% 8%;
-    color:#ffffff;
-}
-#landing-pricing{
-    /* margin-top:10%; */
-    posistion:fixed;
-}
-.website-plan-head{
-    border-top-right-radius: 5px;
-    border-top-left-radius:5px;
-    background-color:rgb(119, 17, 109);
-    color: #ffffff;
-    /* font-family: 'Red Rose', cursive; */
-    padding: 2%;
-
-}
-
-
-
-#second-div{
-    /* background: brown; */
-    padding: 7%;
-    /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
-
-}
-#second-2-div{
-    background:#5000ca ;
-    padding: 5%;
-}
-#second-2-div h3{
-    /* font-family: 'Red Rose', cursive; */
-}
-#second-2-div h4{
-    /* font-family: 'Red Rose', cursive; */
-}
-#second-2-div p{
-    /* font-family: 'Red Rose', cursive; */
-    color: #ffffff;
-}
-#sec-div2 #svg2{
-    border-top:none;
-}
-#second-2-div small{
-    color: #ffffff;
-}
-#div2-imgs{
-    height: 50px;
-}
-#social-icons a{
-    color:#ffffff;
-
-}
-#brand-footer{
-    color:#ffffff;
-}
-#footer-block{
-    background: rgb(25,6,68);
-    background: linear-gradient(90deg, rgba(25,6,68,1) 100%, rgba(0,49,101,1) 100%, rgba(9,208,255,1) 100%, rgba(101,112,137,1) 100%);    color:#ffffff;
-}
-#footer-resource p a{
-    color:#ffffff;
-}
-#footer-useful-links p a{
-    color:#ffffff;
-}
-.privacy-policy{
-    background: rgb(25,6,68);
-    background: linear-gradient(90deg, rgba(25,6,68,1) 100%, rgba(0,49,101,1) 100%, rgba(9,208,255,1) 100%, rgba(101,112,137,1) 100%);    color:#ffffff;
-    text-align: center;
-}
-#third-div{
-    padding: 5%;
-
-
-}
-#second-2-div h3 {
-    color:#ffffff;
-}
-#second-2-div strong{
-    color: #ffffff;
-}
-/* third div new pricing div */
-/* ==============
-  Pricing
-===================*/
-.col-lg-3 .card-block{
-    box-shadow: 0 8px 6px -6px black;
-
-}
-
-.plan-card .plan-icon {
-    display: inline-block;
-    font-size: 35px;
-    width: 100px;
-    height: 100px;
-    color: #ffffff;
-    line-height: 76px;
-    overflow: hidden;
-    border: 12px solid #ffffff;
-    border-radius: 50%;
-    background: #67a8e4;
-    box-shadow: 0 0 3px #cccccc;
-    transition: all .3s;
-}
-
-.plan-card .plan-price span {
-    font-size: 15px;
-    vertical-align: middle;
-}
-
-.plan-card .plan-features p {
-    line-height: 32px;
-}
-
-.bg-pink {
-    background-color: #f06292 !important;
-}
-
-.bg-teal {
-    background-color: #009688 !important;
-}
-
-.text-pink {
-    color: #f06292 !important;
-}
-
-.text-teal {
-    color: #009688 !important;
-}
-
-.btn-pink {
-    background-color: #f06292;
-    border: 1px solid #f06292;
-    color: #ffffff;
-}
-
-.btn-teal {
-    background-color: #009688;
-    border: 1px solid #009688;
-    color: #ffffff;
-}
-/* third div new pricing div end */
+/* NAVBAR ENDS HERE */
