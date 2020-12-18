@@ -1,7 +1,8 @@
 /* NAVBAR  */
 .navbar{
     background:#fff;
-    box-shadow: 0 8px 6px -6px rgb(233, 225, 225);
+    /* box-shadow: 0 8px 6px -6px rgb(233, 225, 225); */
+    border-bottom: 1px solid rgb(223, 216, 216);
 
 }
 #navbrand{
@@ -50,3 +51,184 @@
 }
 
 /* NAVBAR ENDS HERE */
+
+/* home landing page corousel and caption styles */
+.corousel-inner .item{
+    height: 100vh;
+}
+
+#carousel_caption{
+    /* setting caption in center of image */
+    /* padding-bottom:250px; */
+}
+.carousel-caption h5{
+    font-size:50px;
+    text-transform:uppercase;
+    color:rgb(255, 255, 255);
+}
+.carousel-control-next{
+    background-image: none;
+}
+.carousel-control-prev{
+    background-image: none;
+}
+
+.carousel-item img{
+    margin-top: 80px;
+    height: 90%;
+    background-size: cover;
+    background-position: center;
+
+
+}
+.carousel .carousel-indicators li {
+    width: 10px;
+   height: 10px;
+   border-radius: 100%;
+ }
+ /* Fallback for older browsers without RGBA-support  TRANSPERENT COLOR CODE  */
+#carousel_caption{
+    background: rgb(136, 128, 128); 
+    background: rgba(75, 67, 67, 0.5);
+
+}
+/* TRANSPERENT COLOR ENDS  */
+
+ /* carousel captions chagning size of fonts in smaller divices   */
+ 
+ #carousel_caption h5{
+    /* Extra small devices (phones, less than 768px) */
+    font-size: 18px;
+  
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: 768px) {
+      font-size: 12px;
+    }
+  
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: 992px) {
+      font-size: 16px;
+    }
+  
+    /* Large devices (large desktops, 1200px and up) */
+    @media (min-width: 1200px) {
+      font-size: 18px;
+    }
+  }
+  #carousel_caption legend{
+    /* Extra small devices (phones, less than 768px) */
+    font-size: 15px;
+  
+    /* Small devices (tablets, 768px and up) */
+    @media (min-width: 768px) {
+      font-size: 12px;
+    }
+  
+    /* Medium devices (desktops, 992px and up) */
+    @media (min-width: 992px) {
+      font-size: 16px;
+    }
+  
+    /* Large devices (large desktops, 1200px and up) */
+    @media (min-width: 1200px) {
+      font-size: 18px;
+    }
+  }
+
+/* css for image applying from css  (OWN CUSTOMIZED FOR RESPONSIVE FOR SMALL AND LARGE DEVICES)*/
+#carousel-img{
+    margin-top:80px;
+    height: 85vh;
+    background-image: url('/static/images/first_img_ud.jpg');
+    background-size: cover;
+    
+}
+@media screen
+    /* and (min-width: 400px) */
+    and (min-device-width : 320px)
+    and (max-device-width : 480px){ 
+    #carousel-img {
+      background-color: rgb(122, 235, 122);
+      height: 250px;
+    }
+  }
+  
+
+@media screen and (min-width: 800px) {
+    #carousel-img {
+        background-color: rgb(132, 240, 132);
+        height: 85vh;
+    }
+    #carousel-img h5{
+        color:white;
+        font-size: 30px;
+        /* margin-top:-250px; */
+    }
+    
+}
+  
+#carousel-img2{
+    margin-top:80px;
+    height: 85vh;
+    background-image: url('/static/images/quality_ud2.jpg');
+    background-size: cover;
+    object-fit:cover;
+    transform: scale(1);
+    
+}
+@media screen
+    /* and (min-width: 400px) */
+    and (min-device-width : 320px)
+    and (max-device-width : 480px){ 
+    #carousel-img2 {
+      background-color: rgb(122, 235, 122);
+      height: 250px;
+    }
+  }
+
+@media screen and (min-width: 800px) {
+    #carousel-img2 {
+        background-color: rgb(132, 240, 132);
+        height: 85vh;
+    }
+    #carousel-img2 h5{
+        color:white;
+        font-size: 30px;
+
+    }
+}
+#carousel-img3{
+    margin-top:80px;
+    height: 80vh;
+    background-image: url('/static/images/remote_teamUD.jpg');
+    background-size: cover;
+    
+}
+@media screen
+    /* and (min-width: 400px) */
+    and (min-device-width : 320px)
+    and (max-device-width : 480px){ 
+    #carousel-img3 {
+      background-color: rgb(122, 235, 122);
+      height: 250px;
+    }
+  }
+
+@media screen and (min-width: 800px) {
+    #carousel-img3 {
+        background-color: rgb(132, 240, 132);
+        height: 85vh;
+    }
+    #carousel-img3 h5{
+        color:white;
+        font-size: 30px;
+
+    }
+
+}
+/* css for image applying from css ends here (OWN CUSTOMIZED FOR RESPONSIVE FOR SMALL AND LARGE DEVICES) */
+ /* carousel caption changing size of fonts in smaller devices */
+
+
+/* honme landing page corouse and caption styles */
+
