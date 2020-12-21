@@ -22,7 +22,7 @@
 
 }
 .nav-link span{
-    background:rgb(72, 204, 149);
+    background:#253341;
     margin-top:-8px;
     color:rgb(253, 253, 253);
     font-weight: bold;
@@ -308,9 +308,7 @@ h1.h2,h3,h4,h5,h6,p,small{
 #third-div-img{
     /* background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%); */
     /* background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%); */
-    background: #fe8c00;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #f83600, #fe8c00);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #f83600, #fe8c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background:#253341;
     margin-bottom:3%;
     padding-left:10%;
     padding-right:10%;
