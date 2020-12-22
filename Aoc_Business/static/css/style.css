@@ -321,19 +321,16 @@ h1.h2,h3,h4,h5,h6,p,small{
 
 /* Fourth Div */
 .fourth-div{
-    background: #00d2ff;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #928DAB, #00d2ff);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #928DAB, #00d2ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    background:rgb(104, 103, 103);
     /* background-image: url("/static/images/fourth-bgimg.png"); */
     background-repeat: no-repeat;
     background-size: cover;
     padding:5%;
-    margin-top:-3%;
+    margin-top:-2.9%;
     margin-bottom:5%;
 }
 .fourth-div h1,p{
-    color:rgb(7, 1, 97);
+    color:rgb(255, 255, 255);
     font-family: 'Maven Pro', sans-serif;
 
 }
