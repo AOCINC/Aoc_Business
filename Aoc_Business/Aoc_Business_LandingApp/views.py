@@ -5,7 +5,9 @@ def index_view(request):
     template_name = 'Aoc_Business_LandingApp/home.html'
     return render(request, template_name)
 
-
+def Web_App(request):
+    template = 'Aoc_Business_LandingApp/Web_Application.html'
+    return render(request, template)
 
 def projects_info(request):
     template_name = 'Aoc_Business_LandingApp/projects_info.html'

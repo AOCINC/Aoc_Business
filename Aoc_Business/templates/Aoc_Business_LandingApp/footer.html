@@ -1,0 +1,151 @@
+{% load static %}
+
+<head>
+    <style>
+        /* Footer */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #253341;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-family: 'Maven Pro', sans-serif;
+
+}
+#footer {
+    background: #253341 !important;
+}
+#footer h5{
+	padding-left: 10px;
+    border-left: 3px solid #eeeeee;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#ffffff;
+    font-family: 'Maven Pro', sans-serif;
+
+}
+#footer a {
+    color: #ffffff;
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+    font-family: 'Maven Pro', sans-serif;
+
+}
+#footer ul.social li{
+	padding: 3px 0;
+}
+#footer ul.social li a i {
+    margin-right: 5px;
+	font-size:25px;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.social li:hover a i {
+	font-size:30px;
+    margin-top:-10px;
+    /* font-family: 'Maven Pro', sans-serif; */
+    
+}
+#footer ul.social li a,
+#footer ul.quick-links li a{
+	color:#ffffff;
+}
+#footer ul.social li a:hover{
+	color:#eeeeee;
+}
+#footer ul.quick-links li{
+	padding: 3px 0;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.quick-links li:hover{
+	padding: 3px 0;
+	margin-left:5px;
+	font-weight:700;
+}
+#footer ul.quick-links li a i{
+	margin-right: 5px;
+}
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+
+@media (max-width:767px){
+	#footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+    font-family: 'Maven Pro', sans-serif;
+
+}
+}
+
+    </style>
+</head>
+
+
+<!-- Footer -->
+<section id="footer">
+    <div class="container">
+        <div class="row text-center text-xs-center text-sm-left text-md-left">
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <h5>AOCINC</h5>
+                <small class="text-white" style="font-size:16px">AOCINC is provider of Creative Design, <br>  Web & Mobile App Development with API Services.</small>
+                <!-- <ul class="list-unstyled quick-links">
+                    <li><a href="{% url 'Home' %}"><i class="fa fa-angle-double-right"></i>Home</a></li>
+                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li> -->
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <h5>SOFTWARE SERVICES</h5>
+                <ul class="list-unstyled quick-links">
+                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Web Application Development</a></li>
+                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>UX &amp; UI Design</a></li>
+                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Mobile Application Development</a></li>
+                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Android Application Development</a></li>
+                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>iOS Mobile App Development</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <h5>SOLUTIONS</h5>
+                <ul class="list-unstyled quick-links">
+                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Ecommerce Web &amp; Mobile Apps</a></li>
+                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Custom CRM Development</a></li>
+                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Medicle Management Applications</a></li>
+                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Tourism & Hospitality Web Apps</a></li>
+                    <li><a href="https://wwwe.sunlimetech.com" title="Design and developed by"><i class="fa fa-angle-double-right"></i>Transport & Logistics Web Apps</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                <ul class="list-unstyled list-inline social text-center">
+                    <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+                    <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+                    <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+                </ul>
+            </div>
+            </hr>
+        </div>	
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                <p><u><a href="https://www.bootdey.com/">aocinc.com</a></u> </p>
+                <p class="h6">&copy All right Reversed.<a class="text-green ml-2" href="https://www.sunlimetech.com" target="_blank">Aocinc pvt ltd</a></p>
+            </div>
+            </hr>
+        </div>	
+    </div>
+</section>
+<!-- ./Footer -->
