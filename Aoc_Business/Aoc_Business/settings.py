@@ -37,8 +37,13 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # Custom Apps
     'Aoc_Business_LandingApp.apps.AocBusinessLandingappConfig',
-
+    
+    # third party apps
+    'crispy_forms',
 ]
+
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -125,3 +130,13 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
                     STATIC_DIR,
                     ]
+
+# email setup
+from Aoc_Business_LandingApp.Email_Config import EMAIL_BACKEND, EMAIL_HOST, EMAIL_PORT, EMAIL_USE_TLS, EMAIL_HOST_USER, EMAIL_HOST_PASSWORD
+
+EMAIL_BACKEND = EMAIL_BACKEND
+EMAIL_HOST = EMAIL_HOST
+EMAIL_PORT = EMAIL_PORT
+EMAIL_USE_TLS = EMAIL_USE_TLS
+EMAIL_HOST_USER = EMAIL_HOST_USER
+EMAIL_HOST_PASSWORD = EMAIL_HOST_PASSWORD

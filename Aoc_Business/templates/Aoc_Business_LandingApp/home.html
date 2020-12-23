@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 {% extends 'Aoc_Business_LandingApp/base.html' %}
 {% load static %}
-{% load static %}
+{% load crispy_forms_tags %}
+
 <head>
     <!-- animate css cdn  this cdn should include in head tag for animate the text -->
     <link  rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -56,19 +57,62 @@
 
 
 
+
+
+
+
+
+
 <!-- second div page -->
 
 {% include 'Aoc_Business_LandingApp/What_we_Do.html' %}
 
 <!-- second div page end  -->
 
+<!-- sixth contact form div  -->
+<div id="contact-form" >
+<div class="container">
+  <div class="row">
+    <div class="col-sm-6 border">
+      <div id="form-head">
+        <h3 class="text-center">
+          Contact Us
+        </h3>
+      </div>
+      <!-- form -->
+      <form  method="post" novalidate>
+        {% csrf_token %}
+        {{ form |crispy}}
+        <div class="text-center">
+          <button class="btn btn contact-btn" type="submit">Submit</button>
+        </div>
+      </form>
+      <!-- form ends -->
+    </div>
+    <div class="col-sm-4"id="ofc-loc">
+      <h2>
+        India Office
+      </h2>
+      <h5>
+       #9-4-136/F/2, Anurag Colony,<br>
+        Seven Tombs Road,Shaikpet. 
+        Tolichowki,Hyderabad,TS,&nbsp;500008
+        Email : aocincin@gmail.com <br>
+        Phone : +91 72869 53566
+      </h5>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- sixth div contact form end -->
 
 
 
-
-
-
-
+<!-- footer div  -->
+<br><br><br><br><br><br>
+{% include 'Aoc_Business_LandingApp/footer.html' %}
+<!-- footer div  ends -->
 
 
 
