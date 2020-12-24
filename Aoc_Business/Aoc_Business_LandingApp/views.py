@@ -66,6 +66,12 @@ def Web_App(request):
     template = 'Aoc_Business_LandingApp/Web_Application.html'
     return render(request, template)
 
+def UX_Mobile_View(request):
+    template = 'Aoc_Business_LandingApp/ux_design.html'
+    return render(request, template)
+
+
+
 def projects_info(request):
     template_name = 'Aoc_Business_LandingApp/projects_info.html'
     return render(request, template_name)

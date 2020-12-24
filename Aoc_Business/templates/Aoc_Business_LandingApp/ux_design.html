@@ -1,0 +1,66 @@
+{% extends 'Aoc_Business_LandingApp/base.html' %}
+{%  load static %}
+
+{% block content %}
+<div class="ux-design-div" id="UX-Design">
+    <h3>User Interface Design</h3>
+</div>
+
+<br><br><br>
+<!-- user inter face first div-->
+<div class="container"id="">
+    <div class="row">
+    <!-- img div -->
+      <div class="col-sm-6" id="svg-img">
+      </div>
+    <!-- img div end -->
+      <div class="col-sm-6" id="web-ui-text">
+          <h2>User Interface Design</h2><hr>
+        <h3>
+            To create user-friendly interfaces that enable users to understand how to use complex technical products. 
+            If you're passionate about the latest technology trends and devices, 
+            you'll find great fulfilment in being involved in the design process for the next hot gadget.
+        </h3>
+    </div>
+    </div>
+</div>  
+<!-- user interface first div end -->
+<br><br><br><br>
+<!-- arrow -->
+<div class="text-center down-arrow">
+    <img src="{% static 'images/down_arrow.png' %}" alt="">
+</div>
+<!-- aroow end -->
+
+<!-- user interface secondiv  -->
+<div class="container"id="">
+    <div class="row">
+      <div class="col-sm-6" id="web-ui-text2">
+          <h2>Interaction design</h2><hr>
+        <h3>
+            when people buy products/services from your webshop, what would be the next step after they add their item to their cart? 
+            If there is an error, while carrying the activity, will the data or the interaction they have done will be deleted?
+            Here's where we help you. We identify, evaluate and design the interactions that is done with your products and services online. 
+        </h3>
+    </div>
+    <!-- img div -->
+    <div class="col-sm-6" id="svg-img2">
+    </div>
+    <!-- img div end -->
+    </div>
+</div>  
+<br><br><br><br>
+<!-- user interface secondiv end  -->
+
+
+
+<!-- mobile application div -->
+{% include 'Aoc_Business_LandingApp/mobile_application.html' %}
+<!-- mobile application div end -->
+
+
+<!-- footer -->
+{% include 'Aoc_Business_LandingApp/footer.html' %}
+<!-- footer -->
+
+{% endblock %}

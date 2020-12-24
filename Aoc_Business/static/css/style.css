@@ -416,7 +416,9 @@ h1.h2,h3,h4,h5,h6,p,small{
    }
 }
 #web-app-body{
+    margin-bottom: 5%;
     background-image: url("/static/images/bg-img.jpg")
+    
 }
 #web-info{
     background-image:url("/static/images/people.jpg");
@@ -429,6 +431,8 @@ h1.h2,h3,h4,h5,h6,p,small{
     0 22.3px 17.9px rgba(0, 0, 0, 0.072),
     0 41.8px 33.4px rgba(0, 0, 0, 0.086),
     0 100px 80px rgba(199, 193, 193, 0.12);
+    
+
 
 }
 #web-info-text h3{
@@ -466,7 +470,7 @@ h1.h2,h3,h4,h5,h6,p,small{
 
 }
 #web-info4{
-    background-image:url("/static/images/responsive_apps.jpg");
+    background-image:url("/static/images/responsive-web.jpg");
     background-size: cover;
     background-position:right;
     padding:-15%;
@@ -482,6 +486,55 @@ h1.h2,h3,h4,h5,h6,p,small{
     0 100px 80px rgba(199, 193, 193, 0.12);
 
 }
+#web-info5{
+    background-image:url("/static/images/seo.jpg");
+    background-size: cover;
+    background-position:right;
+    padding:-15%;
+    object-fit:cover;
+    height: 400px;
+    width:400px;
+    box-shadow:
+    0 2.8px 2.2px rgba(189, 176, 176, 0.034),
+    0 6.7px 5.3px rgba(236, 130, 130, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(199, 193, 193, 0.12);
+
+}
+#web-info6{
+    background-image:url("/static/images/custom-web.jpg");
+    background-size: cover;
+    background-position:right;
+    padding:-15%;
+    object-fit:cover;
+    height: 400px;
+    width:400px;
+    box-shadow:
+    0 2.8px 2.2px rgba(189, 176, 176, 0.034),
+    0 6.7px 5.3px rgba(236, 130, 130, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(199, 193, 193, 0.12);
+
+}
+
+.vertical { 
+    border-left: 3px dashed #E8290B; 
+    height: 160px; 
+    position:absolute; 
+    left: 50%; 
+    margin-top: -5%;
+} 
+@media screen and (min-device-width : 320px)
+and (max-device-width : 480px){ 
+ .vertical{
+    border-left: none;
+}
+}
+
 
 
 
@@ -545,3 +598,166 @@ html {
 }
 /* CONACT FORM END */
 
+
+/* UX DESIGN STYLES  */
+.ux-design-div{
+    background-image: url("/static/images/web_app_img.jpg");
+    padding: 8%;
+    color:#fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    margin-bottom: 5%;
+    margin-top:3%;
+    
+}
+@media screen and (min-device-width : 320px)
+              and (max-device-width : 480px){ 
+                .ux-design-div{
+                margin-top:21%;
+
+ }
+}
+#svg-img{
+    background-image: url("/static/images/ui_designs.svg"), none;
+    background-repeat: no-repeat;
+    background-size:contain;
+    padding: 10%;
+    height: 300px;
+    object-fit:cover;
+    
+    box-shadow:
+    0 2.8px 2.2px rgba(189, 176, 176, 0.034),
+    0 6.7px 5.3px rgba(236, 130, 130, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(199, 193, 193, 0.12);
+    
+}
+#web-ui-text h2{
+    font-family: 'Maven Pro', sans-serif;
+    margin-top:5%;
+    margin-left: 5%;
+    font-size:28px;
+
+}
+#web-ui-text  hr{
+    background:rgb(255, 0, 119);
+    height: 5px;
+    margin-left:30px;
+    margin-right:240px;
+}
+#web-ui-text h3{
+    font-family: 'Maven Pro', sans-serif;
+    margin-top:5%;
+    margin-left: 5%;
+    font-size:20px;
+}
+
+.down-arrow img{
+    /* background-image:url("/static/images/down_arrow.png"); */
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 200px;
+    margin-top: -5%;
+    margin-left: 5%;
+
+}
+#svg-img2{
+    background-image: url("/static/images/interactive_design2.svg"), none;
+    background-repeat: no-repeat;
+    background-size:contain;
+    padding: 10%;
+    height: 300px;
+    object-fit:cover;
+    margin-top:5%;
+    
+    box-shadow:
+    0 2.8px 2.2px rgba(189, 176, 176, 0.034),
+    0 6.7px 5.3px rgba(236, 130, 130, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(199, 193, 193, 0.12);
+    
+}
+#web-ui-text2 h2{
+    font-family: 'Maven Pro', sans-serif;
+    margin-top:5%;
+    margin-left: 5%;
+    font-size:28px;
+
+}
+#web-ui-text2  hr{
+    background:rgb(255, 0, 119);
+    height: 5px;
+    margin-left:30px;
+    margin-right:280px;
+}
+#web-ui-text2 h3{
+    font-family: 'Maven Pro', sans-serif;
+    margin-top:5%;
+    margin-left: 5%;
+    font-size:20px;
+}
+/* UX DESIGN STYLES END */
+
+
+/* Mobile Application Developemnet */
+
+.mobileApp-text{
+    background-image:url("/static/images/bg-img.jpg");
+    padding: 5%;
+    margin-top:3%;
+}
+.mobileApp-text  hr{
+    background:rgb(255, 0, 119);
+    height: 5px;
+    margin-left:45%;
+    margin-right:45%;
+    
+}
+.mobile_strategy{
+    background-image:url("/static/images/Mobile_strategy.svg"),none;
+    background-repeat: no-repeat;
+    background-size:contain;
+    padding: 10%;
+    height: 300px;
+    object-fit:cover;
+    margin-top:18%;
+    box-shadow:
+    0 2.8px 2.2px rgba(189, 176, 176, 0.034),
+    0 6.7px 5.3px rgba(236, 130, 130, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(199, 193, 193, 0.12);
+}
+#mobile_strategy h3{
+    margin-top:60%;
+    margin-left:-15%;
+}
+
+#web-stretegy-text2 h2{
+    font-family: 'Maven Pro', sans-serif;
+    margin-top:15%;
+    margin-left: 5%;
+
+}
+#web-stretegy-text2 hr{
+    background:rgb(255, 0, 119);
+    height: 5px;
+    margin-left:5%;
+    margin-right:53%;
+
+}
+#web-stretegy-text2 h3{
+    font-family: 'Maven Pro', sans-serif;
+    margin-top:10%;
+    margin-left: 5%;
+    font-size:20px;
+
+}
+
+/* Mobile Application Developemnet end */
