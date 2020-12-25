@@ -523,7 +523,7 @@ h1.h2,h3,h4,h5,h6,p,small{
 
 .vertical { 
     border-left: 3px dashed #E8290B; 
-    height: 160px; 
+    height: 150px; 
     position:absolute; 
     left: 50%; 
     margin-top: -5%;
@@ -610,6 +610,9 @@ html {
     margin-bottom: 5%;
     margin-top:3%;
     
+}
+.ux-design-div h3{
+    margin-left: 15%;
 }
 @media screen and (min-device-width : 320px)
               and (max-device-width : 480px){ 
@@ -711,6 +714,12 @@ html {
     padding: 5%;
     margin-top:3%;
 }
+.mobileApp-text h3{
+    font-family: 'Maven Pro', sans-serif;
+}
+.mobileApp-text h5{
+    font-family: 'Maven Pro', sans-serif;
+}
 .mobileApp-text  hr{
     background:rgb(255, 0, 119);
     height: 5px;
@@ -726,6 +735,7 @@ html {
     height: 300px;
     object-fit:cover;
     margin-top:18%;
+    /* margin-left: 10%; */
     box-shadow:
     0 2.8px 2.2px rgba(189, 176, 176, 0.034),
     0 6.7px 5.3px rgba(236, 130, 130, 0.048),
@@ -754,10 +764,60 @@ html {
 }
 #web-stretegy-text2 h3{
     font-family: 'Maven Pro', sans-serif;
-    margin-top:10%;
+    margin-top:5%;
     margin-left: 5%;
     font-size:20px;
 
 }
+#mobile-inner{
+    background:#080808;
+    height:133px;
+    margin-left:5%;
+    margin-right:5%;
+    box-shadow: 0 8px 6px -6px rgb(255, 0, 119);
 
+}
+@media screen and (min-device-width : 320px)
+              and (max-device-width : 480px){ 
+                #mobile-inner{
+                    height: 220px;
+                    margin-left: 1.6px;
+ }
+}
+#android{
+    background-image: url("/static/images/android.svg");
+    background-repeat: no-repeat;
+    background-size:contain;
+    /* padding: 10%; */
+    height: 80px;
+    object-fit:cover;
+    margin-left:80px;
+    margin-top:22px;
+}
+#ios{
+    background-image: url("/static/images/apple.svg");
+    background-repeat: no-repeat;
+    background-size:contain;
+    /* padding: 10%; */
+    height: 80px;
+    object-fit:cover;
+    margin-left:100px;
+    margin-top:22px;
+
+
+}
+@media screen and (min-device-width : 320px)
+              and (max-device-width : 480px){ 
+                #android{
+                    margin-left: 150px;
+
+ }
+}
+@media screen and (min-device-width : 320px)
+              and (max-device-width : 480px){ 
+                #ios{
+                    margin-left: 150px;
+
+ }
+}
 /* Mobile Application Developemnet end */
