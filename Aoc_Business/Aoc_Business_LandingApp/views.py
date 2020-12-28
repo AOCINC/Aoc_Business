@@ -70,6 +70,11 @@ def UX_Mobile_View(request):
     template = 'Aoc_Business_LandingApp/ux_design.html'
     return render(request, template)
 
+def Solutions_View(request):
+    template  = 'Aoc_Business_LandingApp/Solutions.html'
+    return render(request,template)
+
+
 
 
 def projects_info(request):

@@ -255,9 +255,6 @@ h1.h2,h3,h4,h5,h6,p,small{
     font-size:16px;
     color:black;
 }
-.sec-div p:hover{
-    color: rgb(250, 3, 188)
-}
 
 .sec-div{
     background: #fff;
@@ -821,3 +818,228 @@ html {
  }
 }
 /* Mobile Application Developemnet end */
+
+/* Solutions  */
+#solutions-bnr{
+    font-family: 'Maven Pro', sans-serif;
+    background-image: url("/static/images/E-commerce.jpg");
+    padding:8%;
+    margin-top: 5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* opacity: 0.9; */
+
+}
+#solutions-bnr h1{
+    color:rgb(247, 245, 245);
+    margin-right: -5%;
+    font-size:30px;
+}
+
+@media screen and (min-device-width : 320px)
+              and (max-device-width : 480px){ 
+                #solutions-bnr{
+                    margin-top:80px;
+                    height: 250px;
+
+ }
+}
+@media screen and (min-device-width : 320px)
+              and (max-device-width : 480px){ 
+                #solutions-bnr h1{
+                    font-size:20px;
+                    background: rgba(128, 122, 122, 0.295);
+                    background: rgba(124, 123, 123, 0.486);
+                    color:black;
+                    margin-top:180px;
+
+
+
+ }
+}
+
+#product-management{
+    background-image:url("/static/images/product_management.jpg");
+    background-size: cover;
+    height: 400px;
+    box-shadow:
+    0 2.8px 2.2px rgba(189, 176, 176, 0.034),
+    0 6.7px 5.3px rgba(236, 130, 130, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(199, 193, 193, 0.12);
+
+    
+}
+@media screen and (min-device-width : 320px)
+              and (max-device-width : 480px){ 
+                #product-management{
+                    height: 250px;
+
+
+ }
+}
+
+#web-info-text-product h3{
+    font-family: 'Maven Pro', sans-serif;
+    margin-left:5%;
+    margin-top:10%;
+    
+
+}
+#web-info-text-product h5{
+    font-family: 'Maven Pro', sans-serif;
+    margin-left:5%;
+    margin-top:6%;
+    
+
+}
+#product-payments{
+    background-image:url("/static/images/payment-online.jpg");
+    background-size: cover;
+    height: 400px;
+    box-shadow:
+    0 2.8px 2.2px rgba(189, 176, 176, 0.034),
+    0 6.7px 5.3px rgba(236, 130, 130, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(199, 193, 193, 0.12);
+
+}
+#web-info-text-payemnt h3{
+    font-family: 'Maven Pro', sans-serif;
+    margin-left:5%;
+    margin-top:20%;
+}
+#web-info-text-payemnt h5{
+    font-family: 'Maven Pro', sans-serif;
+    margin-left:5%;
+    margin-top:5%;
+    font-size:20px;
+}
+#web-info-text-CRM h3{
+    font-family: 'Maven Pro', sans-serif;
+    margin-left:5%;
+    margin-top:12%;
+
+}
+#web-info-text-CRM h5{
+    font-family: 'Maven Pro', sans-serif;
+    margin-left:5%;
+    margin-top:5%;
+    font-size:20px;
+
+}
+#CRM-Portal{
+    background-image:url("/static/images/CRM-Portal.jpg");
+    background-size: cover;
+    background-position:center;
+    object-fit:cover;
+    height: 400px;
+    width:400px;
+    box-shadow:
+    0 2.8px 2.2px rgba(189, 176, 176, 0.034),
+    0 6.7px 5.3px rgba(236, 130, 130, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(199, 193, 193, 0.12);
+
+}
+#web-info-text-Medicle h3{
+    font-family: 'Maven Pro', sans-serif;
+    margin-left:5%;
+    margin-top:15%;
+}
+#web-info-text-Medicle h5{
+    font-family: 'Maven Pro', sans-serif;
+    margin-left:5%;
+    margin-top:5%;
+    font-size:20px;
+
+}
+
+#Medicle-management{
+    background-image:url("/static/images/Medicle-management.jpg");
+    background-size: cover;
+    background-position:right;
+    padding:-15%;
+    object-fit:cover;
+    height: 400px;
+    width:400px;
+    box-shadow:
+    0 2.8px 2.2px rgba(189, 176, 176, 0.034),
+    0 6.7px 5.3px rgba(236, 130, 130, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(199, 193, 193, 0.12);
+
+}
+#web-info-text-tourism h3{
+    font-family: 'Maven Pro', sans-serif;
+    margin-left:5%;
+    margin-top:15%;
+}
+#web-info-text-tourism h5{
+    font-family: 'Maven Pro', sans-serif;
+    margin-left:5%;
+    margin-top:5%;
+    font-size:20px;
+
+}
+
+#tourism{
+    background-image:url("/static/images/tourism.jpg");
+    background-size: cover;
+    background-position:right;
+    padding:-15%;
+    object-fit:cover;
+    height: 400px;
+    width:400px;
+    box-shadow:
+    0 2.8px 2.2px rgba(189, 176, 176, 0.034),
+    0 6.7px 5.3px rgba(236, 130, 130, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(199, 193, 193, 0.12);
+
+}
+#web-info-text-travel h3{
+    font-family: 'Maven Pro', sans-serif;
+    margin-left:5%;
+    margin-top:15%;
+
+}
+#web-info-text-travel h5{
+    font-family: 'Maven Pro', sans-serif;
+    margin-left:5%;
+    margin-top:5%;
+    font-size:20px;
+
+
+}
+#logistics{
+    background-image:url("/static/images/logistics.jpg");
+    background-size: cover;
+    background-position:right;
+    padding:-15%;
+    object-fit:cover;
+    height: 400px;
+    width:400px;
+    box-shadow:
+    0 2.8px 2.2px rgba(189, 176, 176, 0.034),
+    0 6.7px 5.3px rgba(236, 130, 130, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(199, 193, 193, 0.12);
+
+}
+
+
+
+/* Solutions end */
