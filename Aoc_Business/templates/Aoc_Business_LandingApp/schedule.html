@@ -1,0 +1,99 @@
+{% extends 'Aoc_Business_LandingApp/base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container"id="schedule-div">
+    <div class="row">
+        <!-- meeting with aoc -->
+        <div class="col-sm-4" id="Aoc-meeting">
+            <h3 class="text-center">AOCINC</h3><hr>
+            <div class="aocinc-img">
+                <img class="" src="{% static 'images/zubair_img.jpeg' %}" alt="">
+            </div>
+            <br>
+            <h4>AOCINC</h4>
+            <h2>Meeting with AOCINC</h2>
+            <h6><i class="far fa-clock"></i> 15 Min</h6>
+            <h6><i class="fas fa-video"></i> &nbsp;conferencing details will provide.</h6>
+            <h6>In this short conference I will able to showcase you AOCINC Capabilities and Portfolio.
+                <br><br>
+                Mobile/WhatsApp: <a href="https://api.whatsapp.com/send?phone=917286953566&text=" target="_blank">+91 72869 53566</a>
+            </h6>
+            <br>
+        </div>
+        <div id="schedule-line"></div>
+        <!-- meeting with aoc end -->
+        <!-- form  goes here -->
+        <div class="col-sm-6" id="Meeting-form">
+            <!-- test -->
+            <form>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputEmail4">Name</label>
+                    <input type="text" class="form-control" name = "Name" id="inputName" placeholder="Your Name">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputPassword4">Email</label>
+                    <input type="text" class="form-control" id="inputEmail" placeholder="Your Email">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="inputAddress">Notes</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="It will help prepare our meeting">
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputCity">Phone</label>
+                    <input type="text" class="form-control" id="inputCity" placeholder="Phone Number">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="inputState">State</label>
+                    <select id="inputState" class="form-control">
+                      <option selected>Choose...</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label for="inputZip">Zip</label>
+                    <input type="text" class="form-control" id="inputZip">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Check me out
+                    </label>
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Sign in</button>
+              </form>
+            <!-- test -->
+            
+        </div>
+        <!-- form end here -->
+      
+
+    </div>
+</div>
+<br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

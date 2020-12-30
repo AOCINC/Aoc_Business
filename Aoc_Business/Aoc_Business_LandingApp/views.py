@@ -74,7 +74,16 @@ def Solutions_View(request):
     template  = 'Aoc_Business_LandingApp/Solutions.html'
     return render(request,template)
 
+def About(request):
+    template  = 'Aoc_Business_LandingApp/about.html'
+    return render(request, template)
 
+def schedule_meeting(request):
+    template = 'Aoc_Business_LandingApp/schedule.html'
+    context  = {
+
+    }
+    return render(request, template,context)
 
 
 def projects_info(request):

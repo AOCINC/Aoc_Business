@@ -1039,7 +1039,140 @@ html {
     0 100px 80px rgba(199, 193, 193, 0.12);
 
 }
-
+#startup{
+    background-image:url("/static/images/startup.jpg");
+    background-size: cover;
+    background-position:right;
+    padding:-15%;
+    object-fit:cover;
+    height: 400px;
+    width:400px;
+    box-shadow:
+    0 2.8px 2.2px rgba(189, 176, 176, 0.034),
+    0 6.7px 5.3px rgba(236, 130, 130, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(199, 193, 193, 0.12);
+    
+}
 
 
 /* Solutions end */
+
+/* about us  */
+#aboutus-bg{
+    background-image: url("/static/images/bg-img.jpg");
+    padding: 2%;
+    margin-top: 2%;
+}
+@media screen and (min-device-width : 320px)
+              and (max-device-width : 480px){ 
+                #aboutus-bg{
+                    margin-top:12%;
+
+ }
+}
+
+#aboutus{
+    margin-top:3%;
+}
+#aboutus hr{
+    background:#0eb493;
+    height: 3px;
+    width:5%;
+    margin:0 auto;
+    
+}
+#aboutus h3{
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 700;
+}
+#aboutus p{
+    font-family: 'Maven Pro', sans-serif;
+    color:black;
+    margin-top:3%;
+    font-size: 18px;
+}
+/* about us end */
+
+/* schedule meeting  */
+#schedule-div{
+    margin-top: 10%;
+    border: 1px rgb(219, 216, 216) solid;
+    border-radius: 10px;
+    box-shadow: 0 0 .25em .25em rgba(150, 147, 147, 0.25);
+     
+}
+@media screen and (min-device-width : 320px)
+              and (max-device-width : 480px){ 
+                #schedule-div{
+                    margin-top:15%;
+
+ }
+}
+#Aoc-meeting h3{
+    padding: 10%;
+    font-weight: bold;
+
+}
+#schedule-line{
+    border-radius: 10px;
+    border-left: 2px solid #e6e6e6; 
+
+}
+#Aoc-meeting{
+    font-family: 'Maven Pro', sans-serif;
+
+}
+#Aoc-meeting hr{
+    background: rgb(247, 245, 245);
+    margin-left: -4.2%;
+    margin-right: -4.2%;
+}
+.aocinc-img img{
+    height: 80px;
+    border-radius: 100px;
+    margin-top:-15.5%;
+    border: 5px solid rgb(255, 255, 255);
+    box-shadow: 0 0 .25em .25em rgba(0, 0, 0, 0.25);
+
+}
+#Aoc-meeting h4{
+    color:gray;
+    padding: 2%;
+}
+#Aoc-meeting h2{
+    color:rgb(73, 70, 70);
+    font-weight: bold;
+    padding: 2%;
+    margin-top: -20px;
+}
+#Aoc-meeting h6{
+    color:rgb(141, 139, 139);
+    padding: 2%;
+    margin-top: 10px;
+    font-weight: bold;
+
+
+}
+/* Meeting Form  */
+#Meeting-form{
+    margin-top: 5%;
+}
+/* Meeting Form  */
+#Meeting-form {
+    margin-left: 5%;
+
+}
+@media screen and (min-device-width : 320px)
+              and (max-device-width : 480px){ 
+                #Meeting-form{
+                    margin-left:0;
+
+ }
+}
+
+
+
+/* schedule meeting ends  */
