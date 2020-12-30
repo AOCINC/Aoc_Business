@@ -80,10 +80,28 @@ def About(request):
 
 def schedule_meeting(request):
     template = 'Aoc_Business_LandingApp/schedule.html'
-    context  = {
-
-    }
-    return render(request, template,context)
+    if request.method == 'POST':
+        Name  = request.POST.get('Name')
+        Email = request.POST.get('email')
+        Phone = request.POST.get('phone')
+        Zoom  = request.POST.get('zoom')
+        Note  = request.POST.get('notes')
+        subject = 'New Enquiry  By\t' + Name 
+        context = {
+                'Name':Name,
+                'Email':Email, 
+                'Phone':Phone,
+                'Zoom':Zoom,  
+                'Note':Note,              
+            }
+        from_email = EMAIL_HOST_USER
+        to   = [EMAIL_HOST_USER]
+        message = get_template('Aoc_Business_LandingApp/Schedule_Enquiry.html').render(context)
+        msg = EmailMessage(subject, message, to=to,from_email = from_email)
+        msg.content_subtype  = 'html'
+        msg.send()
+        return HttpResponseRedirect(request.path_info) # redirecting the current page after updating in the form 
+    return render(request, template)
 
 
 def projects_info(request):
