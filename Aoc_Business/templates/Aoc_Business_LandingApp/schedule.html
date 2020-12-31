@@ -35,7 +35,7 @@
           {% endif %}
           <!-- messages -->
             <!-- test -->
-            <form method = "POST" novalidate>
+            <form method = "POST" action="{% url 'schedule_meeting' %}" novalidate>
                 {% csrf_token %}
                 <div class="form-row">
                   <div class="form-group col-md-6">

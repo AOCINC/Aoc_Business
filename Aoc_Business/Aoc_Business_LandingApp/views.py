@@ -105,7 +105,7 @@ def schedule_meeting(request):
         if not isValid(Phone): # validation for phone number 
             messages.error(request, 'Please Enter valid Mobile Number') 
             return HttpResponseRedirect(request.path_info) # redirecting the current page after updating in the form 
-
+        
         subject = 'New Enquiry  By\t' + Name 
         context = {
                 'Name':Name,
