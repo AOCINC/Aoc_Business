@@ -1,5 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect
 from django.core.mail import send_mail
+from django.contrib import messages
+import re
 from django.core.mail import EmailMessage
 from django.template.loader import get_template
 from django.template import Context
@@ -28,6 +30,7 @@ def index_view(request):
                     'requirement':requirement,                
 
                 }
+            print(session)
             from_email = EMAIL_HOST_USER
             to   = [EMAIL_HOST_USER]
             message = get_template('Aoc_Business_LandingApp/contact_email.html').render(context)
@@ -61,6 +64,13 @@ def index_view(request):
 
 
 
+def isValid(Number): 
+    # validation for mobile number...
+    # 1) Begins with 0 or 91 
+    # 2) Then contains 7 or 8 or 9. 
+    # 3) Then contains 9 digits 
+    Pattern = re.compile("(0/91)?[7-9][0-9]{9}") 
+    return Pattern.match(Number) 
 
 def Web_App(request):
     template = 'Aoc_Business_LandingApp/Web_Application.html'
@@ -86,6 +96,16 @@ def schedule_meeting(request):
         Phone = request.POST.get('phone')
         Zoom  = request.POST.get('zoom')
         Note  = request.POST.get('notes')
+        if Name == '' or Name.isdigit():    #validation for name should be alphabet not empty field nor digit
+            messages.error(request, 'Please Provide Name Not digits or empty Field & not Special symbols')
+            return HttpResponseRedirect(request.path_info) # redirecting the current page after updating in the form 
+        if Email == '' or not '@' in Email: #validation for email if @ is not included then raise error message.
+            messages.error(request, 'Please Provide valid Email or Not Given Email') 
+            return HttpResponseRedirect(request.path_info) # redirecting the current page after updating in the form 
+        if not isValid(Phone): # validation for phone number 
+            messages.error(request, 'Please Enter valid Mobile Number') 
+            return HttpResponseRedirect(request.path_info) # redirecting the current page after updating in the form 
+
         subject = 'New Enquiry  By\t' + Name 
         context = {
                 'Name':Name,
