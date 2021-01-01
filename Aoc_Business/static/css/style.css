@@ -1094,6 +1094,12 @@ html {
     margin-top:3%;
     font-size: 18px;
 }
+#secondLine{
+    border-bottom: 2px dashed gray;
+    margin-top: 5%;
+
+}
+
 /* about us end */
 
 /* schedule meeting  */

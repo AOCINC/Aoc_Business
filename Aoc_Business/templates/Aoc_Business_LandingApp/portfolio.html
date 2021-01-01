@@ -2,14 +2,16 @@
 <!-- page css -->
 <head>
     <style>
-        .timeline_area {
+    .timeline_area {
     position: relative;
     z-index: 1;
+    background:rgb(255, 255, 255);
+    margin-top:-5%;
 }
 .single-timeline-area {
     position: relative;
     z-index: 1;
-    padding-left: 180px;
+    /* padding-left: 100px; */
 }
 @media only screen and (max-width: 575px) {
     .single-timeline-area {
@@ -18,8 +20,8 @@
 }
 .single-timeline-area .timeline-date {
     position: absolute;
-    width: 180px;
-    height: 100%;
+    /* width: 180px; */
+    /* height: 100%; */
     top: 0;
     left: 0;
     z-index: 1;
@@ -55,7 +57,7 @@
     width: 11px;
     height: 11px;
     border-radius: 50%;
-    background-color: #f1c40f;
+    /* background-color: #f1c40f; */
     content: "";
     top: 50%;
     right: 26px;
@@ -79,6 +81,13 @@
     -webkit-box-shadow: 0 0.25rem 1rem 0 rgba(47, 91, 234, 0.125);
     box-shadow: 0 0.25rem 1rem 0 rgba(47, 91, 234, 0.125);
     border: 1px solid #ebebeb;
+    background:#fff;
+    /* box-shadow: 0 0 .25em .25em rgba(150, 147, 147, 0.25); */
+
+}
+.single-timeline-area .single-timeline-content:hover{
+    box-shadow: 0 0 .25em .25em rgba(214, 214, 210, 0.596);
+
 }
 @media only screen and (max-width: 575px) {
     .single-timeline-area .single-timeline-content {
@@ -131,7 +140,6 @@ body{
 <!-- page css end -->
 
 
-
 <section class="timeline_area section_padding_130">
     <div class="container">
         <div class="row justify-content-center">
@@ -139,7 +147,7 @@ body{
                 <!-- Section Heading-->
                 <div class="section_heading text-center">
                     <!-- <h6>Our History</h6> -->
-                    <h3>A brief stories of our 2 years company journey</h3>
+                    <h3>AOCINC Portfolio</h3>
                     <div class="line"></div>
                 </div>
             </div>
@@ -156,7 +164,7 @@ body{
                         <div class="row">
                             <div class="col-12 col-md-6 col-lg-4">
                                 <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-address-card" aria-hidden="true"></i></div>
+                                    <div class="timeline-icon"><i class="fas fa-tshirt" aria-hidden="true"></i></div>
                                     <div class="timeline-text">
                                         <h6>TailorOnWheels</h6>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -165,7 +173,7 @@ body{
                             </div>
                             <div class="col-12 col-md-6 col-lg-4">
                                 <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-archive" aria-hidden="true"></i></div>
+                                    <div class="timeline-icon"><i class="fas fa-umbrella-beach" aria-hidden="true"></i></div>
                                     <div class="timeline-text">
                                         <h6>Voyage Travels</h6>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -174,7 +182,7 @@ body{
                             </div>
                             <div class="col-12 col-md-6 col-lg-4">
                                 <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.7s" style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-address-book" aria-hidden="true"></i></div>
+                                    <div class="timeline-icon"><i class="fas fa-cart-plus" aria-hidden="true"></i></div>
                                     <div class="timeline-text">
                                         <h6>ZPlus</h6>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -191,7 +199,7 @@ body{
                         <div class="row">
                             <div class="col-12 col-md-6 col-lg-4">
                                 <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-briefcase" aria-hidden="true"></i></div>
+                                    <div class="timeline-icon"><i class="fas fa-shopping-cart" aria-hidden="true"></i></div>
                                     <div class="timeline-text">
                                         <h6>E-commerce</h6>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -200,7 +208,7 @@ body{
                             </div>
                             <div class="col-12 col-md-6 col-lg-4">
                                 <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-desktop" aria-hidden="true"></i></div>
+                                    <div class="timeline-icon"><i class="fas fa-briefcase-medical" aria-hidden="true"></i></div>
                                     <div class="timeline-text">
                                         <h6>Medicle Management</h6>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -209,7 +217,7 @@ body{
                             </div>
                             <div class="col-12 col-md-6 col-lg-4">
                                 <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-desktop" aria-hidden="true"></i></div>
+                                    <div class="timeline-icon"><i class="fas fa-plane" aria-hidden="true"></i></div>
                                     <div class="timeline-text">
                                         <h6>Tourism & Travel</h6>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
@@ -226,7 +234,7 @@ body{
                         <div class="row">
                             <div class="col-12 col-md-6 col-lg-4">
                                 <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-id-card" aria-hidden="true"></i></div>
+                                    <div class="timeline-icon"><i class="fas fa-pills" aria-hidden="true"></i></div>
                                     <div class="timeline-text">
                                         <h6>Healthcare</h6>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
@@ -235,7 +243,7 @@ body{
                             </div>
                             <div class="col-12 col-md-6 col-lg-4">
                                 <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
-                                    <div class="timeline-icon"><i class="fa fa-desktop" aria-hidden="true"></i></div>
+                                    <div class="timeline-icon"><i class="fas fa-chalkboard-teacher" aria-hidden="true"></i></div>
                                     <div class="timeline-text">
                                         <h6>Learning Managaement</h6>
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
