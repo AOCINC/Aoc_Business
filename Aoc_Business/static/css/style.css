@@ -1,6 +1,7 @@
-html {
+body,html {
     overflow-x: hidden; 
 }
+
 /* NAVBAR  */
 .navbar{
     background:#fff;
@@ -962,7 +963,7 @@ html {
 }
 
 #Medicle-management{
-    background-image:url("/static/images/Medicle-management.jpg");
+    background-image:url("/static/images/medicle-management.jpg");
     background-size: cover;
     background-position:right;
     padding:-15%;

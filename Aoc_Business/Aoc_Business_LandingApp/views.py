@@ -30,7 +30,7 @@ def index_view(request):
                     'requirement':requirement,                
 
                 }
-            print(session)
+        
             from_email = EMAIL_HOST_USER
             to   = [EMAIL_HOST_USER]
             message = get_template('Aoc_Business_LandingApp/contact_email.html').render(context)
