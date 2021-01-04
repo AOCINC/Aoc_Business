@@ -118,22 +118,22 @@ section .section-title {
             <div class="col-xs-12 col-sm-4 col-md-4">
                 <h5>SOFTWARE SERVICES</h5>
                 <ul class="list-unstyled quick-links">
-                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Web Application Development</a></li>
-                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>UX &amp; UI Design</a></li>
-                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Mobile Application Development</a></li>
-                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Android Application Development</a></li>
-                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>iOS Mobile App Development</a></li>
+                    <li><a href="{% url 'web_application_dev' %}"><i class="fa fa-angle-double-right"></i>Web Application Development</a></li>
+                    <li><a href="{% url 'ux_mobile' %}"><i class="fa fa-angle-double-right"></i>UX &amp; UI Design</a></li>
+                    <li><a href="{% url 'ux_mobile' %}#mobileApp"><i class="fa fa-angle-double-right"></i>Mobile Application Development</a></li>
+                    <li><a href="{% url 'ux_mobile' %}#mobileApp"><i class="fa fa-angle-double-right"></i>Android Application Development</a></li>
+                    <li><a href="{% url 'ux_mobile' %}#mobileApp"><i class="fa fa-angle-double-right"></i>iOS Mobile App Development</a></li>
                 </ul>
             </div>
             <div class="col-xs-12 col-sm-4 col-md-4">
                 <h5>SOLUTIONS</h5>
                 <ul class="list-unstyled quick-links">
-                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Ecommerce Web &amp; Mobile Apps</a></li>
-                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Custom CRM Development</a></li>
-                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Medicle Management Applications</a></li>
-                    <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Tourism & Hospitality Web Apps</a></li>
-                    <li><a href="" title="Design and developed by"><i class="fa fa-angle-double-right"></i>Transport & Logistics Web Apps</a></li>
-                    <li><a href="" title="Design and developed by"><i class="fa fa-angle-double-right"></i>For Startup's &amp; Entrepreneur</a></li>
+                    <li><a href="{% url 'solutions' %}#productManagement"><i class="fa fa-angle-double-right"></i>Ecommerce Web &amp; Mobile Apps</a></li>
+                    <li><a href="{% url 'solutions' %}#CRM"><i class="fa fa-angle-double-right"></i>Custom CRM Development</a></li>
+                    <li><a href="{% url 'solutions' %}#MedicleManage"><i class="fa fa-angle-double-right"></i>Medicle Management Applications</a></li>
+                    <li><a href="{% url 'solutions' %}#Tourism"><i class="fa fa-angle-double-right"></i>Tourism & Hospitality Web Apps</a></li>
+                    <li><a href="{% url 'solutions' %}#Logistics" title="Design and developed by"><i class="fa fa-angle-double-right"></i>Transport & Logistics Web Apps</a></li>
+                    <li><a href="{% url 'solutions' %}#Startup" title="Design and developed by"><i class="fa fa-angle-double-right"></i>For Startup's &amp; Entrepreneur</a></li>
                 </ul>
             </div>
         </div>
@@ -150,7 +150,7 @@ section .section-title {
         </div>	
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
-                <p><u><a href="#">aocinc.in</a></u> </p>
+                <p><u><a href="{% url 'Home' %}">aocinc.in</a></u> </p>
             </div>
             </hr>
         </div>	
