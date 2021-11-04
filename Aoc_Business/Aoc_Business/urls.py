@@ -16,9 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 from Aoc_Business_LandingApp import urls
-
+from JobsApp import urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('Aoc_Business_LandingApp.urls')),
+    path('',include('JobsApp.urls')),
 ]

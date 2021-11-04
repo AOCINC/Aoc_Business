@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # Custom Apps
     'Aoc_Business_LandingApp.apps.AocBusinessLandingappConfig',
+    'JobsApp.apps.JobsappConfig',
     
     # third party apps
     'crispy_forms',
