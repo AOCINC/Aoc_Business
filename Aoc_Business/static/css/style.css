@@ -1199,3 +1199,124 @@ html {
 }
 
 /* schedule meeting ends  */
+
+/* JOBS APP */
+/* jobs upload form */
+#JobUpload{
+    background: #fff;
+    padding: 3%;
+    box-shadow: 0 0 50px #ccc;
+
+}
+#JobUpload h2{
+    color:#5A20CB;
+    box-shadow: 0 0 15px #ccc;
+    padding: 1%;
+    font-family:Palatino, serif;
+
+}
+#Jobupload-btn{
+    background:#5A20CB;
+    color:#fff;
+}
+/* jobs upload form */
+/* JOBS LIST  */
+#jobCard{
+    border: 1px solid rgb(207, 204, 204);
+    box-shadow: 0 0 10px #ccc;
+    padding: 3%;
+    transition: .5s ease;
+}
+#jobCard:hover{
+    box-shadow: 0 0 15px rgb(160, 159, 159);
+    transition: .5s ease;
+}
+#DetailBtn{
+    background:#03203C;
+    color:#fff;
+}
+/* ====== Search Box ======  */
+
+#course-container{
+    margin-bottom: 5%;
+    box-shadow: 0 0 10px #ccc;
+    padding:2%;
+}
+.course-search
+{
+/* margin-bottom: 3%; */
+border: 2px solid rgb(167, 159, 159);
+overflow: auto;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+
+
+}
+
+.course-search input[type="text"]
+{
+border: 0px;
+width: 67%;
+padding: 10px 10px;
+
+}
+
+.course-search input[type="text"]:focus
+{
+outline: 0;
+}
+
+.course-search input[type="submit"]
+{
+    /* border-radius-top-right: 5px;
+    border-radius-bottom-right: 5px; */
+    
+    border: 0px;
+    background: none;
+    background-color:#03203C;
+    color: #fff;
+    float: right;
+    padding: 11px;
+    -moz-border-radius-top-right: 5px;
+    -webkit-border-radius-top-right: 5px;
+    -moz-border-radius-bottom-right: 5px;
+    -webkit-border-radius-bottom-right: 5px;
+    cursor:pointer;
+
+
+}
+
+/* ===========================
+====== Medua Query for Search Box ====== 
+=========================== */
+
+@media only screen and (min-width : 150px) and (max-width : 780px)
+{
+{}
+.course-search
+{
+    width: 95%;
+    margin: 0 auto;
+}
+
+}
+/* SEARCH BOX END HERE */
+/* job messages */
+#JobMsg{
+    padding: 1px;
+}
+#JobMsg p{
+    color:#7c0505;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+/* job messages end here */
+
+/* JOBS LIST */
+
+
+/* JOBS APP */
+
+
+

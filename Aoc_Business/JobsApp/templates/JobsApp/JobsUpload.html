@@ -1,0 +1,38 @@
+{% extends 'Aoc_Business_LandingApp/base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<br><br><br><br>
+<br>
+<!-- form div -->
+<div class="container" id="JobUpload">
+<h2 class="text-center"> <strong>Jobs Upload </strong> </h2>
+    <hr>
+    <form method="post" novalidate>
+    {% csrf_token %}
+    <div class="row">
+        <div class="col-sm">
+            {{ jobsForm.Designation |as_crispy_field }}
+            {{ jobsForm.Functional_Area |as_crispy_field }}
+            {{ jobsForm.Job_Description |as_crispy_field }}
+            {{ jobsForm.Notice_Period |as_crispy_field }}
+
+        </div>
+        <div class="col-sm">
+            {{ jobsForm.Location |as_crispy_field }}
+            {{ jobsForm.Industry |as_crispy_field }}
+            {{ jobsForm.Rate_Card |as_crispy_field }}
+        </div>
+        <div class="col-sm">
+            {{ jobsForm.Client_Name |as_crispy_field }}
+            {{ jobsForm.Experience |as_crispy_field }}
+            {{ jobsForm.Salary_LPA |as_crispy_field }}            
+        </div>
+    </div>
+    <button id="Jobupload-btn"type="submit" class="btn btn">SUBMIT</button>
+</form>
+</div>
+<!-- form div -->
+<br><br><br>
+{% endblock %}
