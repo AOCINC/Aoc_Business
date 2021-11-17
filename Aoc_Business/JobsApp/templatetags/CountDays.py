@@ -4,6 +4,6 @@ register = template.Library()
 import datetime
 
 @register.filter(name='dayCount')
-def dayCount(day):
+def dayCount():
     today =  datetime.datetime.now().date()
     return today

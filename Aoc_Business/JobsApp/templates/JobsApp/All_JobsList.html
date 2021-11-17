@@ -8,10 +8,15 @@
 <!-- message -->
 {% if messages %}
 {% for message in messages %}
-<div class="alert alert-danger container" role="alert" id="JobMsg">
+<div class="alert alert-secondary container" role="alert" id="JobMsg">
     <p class ="animate__animated animate__headShake">{{ message }} </p>
 </div>
 {% endfor %}
+{% endif %}
+{% if messages.tags == 'success' %}
+    {% for message in messages %}
+        {{ message }}
+    {% endfor %}
 {% endif %}
 <!-- message -->
 
@@ -46,10 +51,11 @@
                     <p class="card-text text-muted" style="font-size:12px"> <i class="fas fa-suitcase"></i> {{ p.Experience }} Yrs</p>
                     <p class="card-text text-muted" style="font-size:12px"> <i class="fas fa-industry"></i> Industry -{{ p.Industry}} </p>
                     <p class="card-text text-muted" style="font-size:12px"> <i class="far fa-dot-circle"></i> Functional Area - {{ p.Functional_Area}} </p>
-                    <p class="card-text text-danger" style="font-size:12px;"> <i class="fas fa-history"></i> {{ p.Posted_On |timesince }} Ago  </p>
+                    <!-- <p class="card-text text-danger" style="font-size:12px;"> <i class="fas fa-history"></i> {{ p.Posted_On |timesince }} Ago  </p> -->
+                    <!-- <p class="card-text text-danger" style="font-size:12px;"> <i class="fas fa-history"></i> {{ p.Posted_On|timesince }}  </p> -->
                     <br>
                     <div class="d-flex justify-content-center">
-                        <a id="DetailBtn" href="" class="btn btn btn-block"> Details</a>
+                        <a id="DetailBtn" href="JobDetial/{{ p.id }}" class="btn btn btn-block"> Details</a>
                     </div>
                 </div>
             </div>
@@ -57,6 +63,12 @@
         {% endfor %}
     </div>
 </div>
+<br>
+<hr id="JobListAfter">
 <!-- Jobs list -->
 
+<!-- footer div  -->
+<br><br><br><br><br><br>
+{% include 'Aoc_Business_LandingApp/footer.html' %}
+<!-- footer div  ends -->
 {% endblock %}

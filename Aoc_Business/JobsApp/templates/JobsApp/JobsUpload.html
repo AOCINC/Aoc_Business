@@ -8,7 +8,7 @@
 <!-- form div -->
 <div class="container" id="JobUpload">
 <h2 class="text-center"> <strong>Jobs Upload </strong> </h2>
-    <hr>
+    <hr><br>
     <form method="post" novalidate>
     {% csrf_token %}
     <div class="row">
@@ -16,18 +16,27 @@
             {{ jobsForm.Designation |as_crispy_field }}
             {{ jobsForm.Functional_Area |as_crispy_field }}
             {{ jobsForm.Job_Description |as_crispy_field }}
-            {{ jobsForm.Notice_Period |as_crispy_field }}
+            {{ jobsForm.Job_Description1 |as_crispy_field }}
+            {{ jobsForm.Job_Description2 |as_crispy_field }}
+            {{ jobsForm.Job_Description3 |as_crispy_field }}
 
         </div>
         <div class="col-sm">
             {{ jobsForm.Location |as_crispy_field }}
             {{ jobsForm.Industry |as_crispy_field }}
             {{ jobsForm.Rate_Card |as_crispy_field }}
+            {{ jobsForm.Education |as_crispy_field }}
+            {{ jobsForm.Notice_Period |as_crispy_field }}
+
         </div>
         <div class="col-sm">
             {{ jobsForm.Client_Name |as_crispy_field }}
             {{ jobsForm.Experience |as_crispy_field }}
-            {{ jobsForm.Salary_LPA |as_crispy_field }}            
+            {{ jobsForm.Salary_LPA |as_crispy_field }}  
+            {{ jobsForm.Openings   |as_crispy_field }}
+            {{ jobsForm.Role |as_crispy_field }}
+
+
         </div>
     </div>
     <button id="Jobupload-btn"type="submit" class="btn btn">SUBMIT</button>

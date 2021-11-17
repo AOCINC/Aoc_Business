@@ -6,18 +6,27 @@ class JobUpload_Form(forms.ModelForm):
         model = Job_Upload
         fields = [
                     'Designation',
+                    'Education',
                     'Location',
                     'Client_Name',
                     'Functional_Area',
                     'Industry',
                     'Experience',
                     'Job_Description',
+                    'Job_Description1',
+                    'Job_Description2',
+                    'Job_Description3',
                     'Rate_Card',
                     'Salary_LPA',
                     'Notice_Period',
+                    'Openings',
+                    'Role',
                     # 'Posted_On',    
                 ]
         widgets = {
         'Job_Description': forms.Textarea(attrs={'rows':1, 'cols':15}),
+        'Job_Description1': forms.Textarea(attrs={'rows':1, 'cols':15}),
+        'Job_Description2': forms.Textarea(attrs={'rows':1, 'cols':15}),
+        'Job_Description3': forms.Textarea(attrs={'rows':1, 'cols':15}),
         }
         

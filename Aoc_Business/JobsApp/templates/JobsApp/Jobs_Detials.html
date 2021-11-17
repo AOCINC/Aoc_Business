@@ -1,0 +1,156 @@
+{% extends 'Aoc_Business_LandingApp/base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% load CountDays %}
+
+{% block content %}
+<br><br><br><br><br>
+<!-- message -->
+{% if messages %}
+{% for message in messages %}
+<div class="alert alert-danger container" role="alert" id="JobMsg">
+    <p class="animate__animated animate__headShake">{{ message }} </p>
+</div>
+{% endfor %}
+{% endif %}
+<!-- message -->
+<!-- modal -->
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Fill The Form</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- personal info -->
+          <form method="post" enctype="multipart/form-data" novalidate>
+              {% csrf_token %}
+            <div class="form-group">
+              <label for="exampleInputEmail1">Name</label>
+              <input type="text" name="user_name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Phone</label>
+                <input type="text" name="user_phone" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Phone Number">
+              </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="text" name="objectId" value="{{ JobDetail.id }}" hidden>   <!-- this filed is hidden and getting job east field -->
+                <input type="email" name = "user_email"class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <!-- cv upload -->
+                <input type="file" name="JobFile">
+              <!-- cv upload -->
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+          <!-- personal info -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- modal -->
+
+<!-- Job Detail  Header-->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8" id="jobDetail-div">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{ JobDetail.Designation|upper }}</h5>
+                    <p class="card-text text-secondary font-weight-bold"><i class="fas fa-industry"></i> {{ JobDetail.Client_Name|upper}}</p>
+                    <p class="card-text text-secondary"><i class="fas fa-wallet"></i> {{ JobDetail.Salary_LPA }}</p>
+                    <a href="#"  id="jobDetail-Apply" class="btn btn" data-toggle="modal" data-target="#exampleModal">Apply</a> <hr>
+                    <p class="card-text text-secondary"> Posted on:  {{ JobDetail.Posted_On|date }} </p>
+                </div>
+            </div>        
+        </div>
+        <!-- side bar -->
+        <!-- <div class="col-sm-4">col-sm-4</div> -->
+        <!-- side bar -->
+    </div>
+</div>
+<!-- Job Detail Header -->
+<br><br>
+<!-- Job Detail Description -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8" id="jobDetail-div">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title font-weight-bold "> <u> Details </u></h5>
+                    <p class="card-text text-secondary font-weight-bold"> Experience: {{ JobDetail.Experience }} Yrs</p>
+                    <p class="card-text text-secondary">
+                        Education: {{ JobDetail.Education }}
+                    </p>
+                    <p class="card-text text-secondary">
+                        Location: <b> {{ JobDetail.Location }} </b>
+                    </p>
+                    <p class="card-text text-secondary">
+                        Notice Period : <b> {{ JobDetail.Notice_Period }} </b>
+                    </p>
+                    <hr>
+                    <h5 class="card-title font-weight-bold "> <u> Job Description </u></h5>
+                    <p class="card-text text-secondary">
+                        <li>
+                        {{ JobDetail.Job_Description }}
+                        </li>
+                    </p>
+                    <p class="card-text text-secondary">
+                        <li> 
+                        {{ JobDetail.Job_Description1 }}
+                        </li>
+                    </p>
+                    <p class="card-text text-secondary">
+                        <li>
+                        {{ JobDetail.Job_Description2 }}
+                        </li>
+                    </p>
+                    <p class="card-text text-secondary">
+                        <li>
+                        {{ JobDetail.Job_Description3 }}
+                        </li>
+                    </p>
+                    <hr>
+                    <p class="card-text text-secondary">
+                        Role : {{ JobDetail.Role }}
+                    </p>
+                    <p class="card-text text-secondary">
+                        Openings : <b> {{ JobDetail.Openings }} </b>
+                    </p>
+                    <p class="card-text text-secondary">
+                        Industry : <b> {{ JobDetail.Industry }} </b>
+                    </p>
+                    <p class="card-text text-secondary">
+                        Functionaly Area : <b> {{ JobDetail.Functional_Area }} </b>
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- side bar -->
+        <!-- <div class="col-sm-4">col-sm-4</div> -->
+        <!-- side bar -->
+    </div>
+</div>
+<br><br><br>
+<hr id="JobListAfter">
+
+<!-- footer div  -->
+<br><br><br>
+{% include 'Aoc_Business_LandingApp/footer.html' %}
+<!-- footer div  ends -->
+
+
+<!-- Job Detail Description -->
+
+
+{% endblock %}

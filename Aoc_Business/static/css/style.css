@@ -1307,13 +1307,41 @@ outline: 0;
     padding: 1px;
 }
 #JobMsg p{
-    color:#7c0505;
+    color:#080808;
     margin-top: 8px;
     margin-left: 10px;
 }
 /* job messages end here */
 
 /* JOBS LIST */
+
+/* JOB DETAIL */
+#jobDetail-div{
+    box-shadow: 0 0 10px rgb(184, 180, 180);
+    border-radius: 5px;
+}
+#jobDetail-div .card{
+    border: none;
+}
+#jobDetail-Apply{
+    background: #03203C;
+    color: #fff;
+    width: 20%;
+}
+#jobDetail-Apply:hover{
+    box-shadow: 0 0 10px rgb(109, 107, 107);
+    
+}
+#JobListAfter{
+    /* Gradient transparent - color - transparent */
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+/* JOB DETAIL */
+
+
 
 
 /* JOBS APP */
