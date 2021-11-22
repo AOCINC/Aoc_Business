@@ -8,7 +8,7 @@ TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 
 
 # STATIC PATH
-STATIC_DIR = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, '/static/')
 
 
 
@@ -127,9 +127,9 @@ USE_TZ  = True
 STATIC_URL = '/static/'
 
 
-STATIC_URL = '/static/'
+# STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-                    STATIC_DIR,
+                    os.path.join(BASE_DIR, 'static'),
                     ]
 
 # email setup

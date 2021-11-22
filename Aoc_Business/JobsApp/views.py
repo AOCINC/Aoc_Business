@@ -40,7 +40,18 @@ def JobsListView(request):
     if query == '':
         messages.warning(request,'Please Enter Which Job You Are Searching For...')
     today = datetime.datetime.today()
-    print(today)
+    # admin login below.
+    Aocinc_admin = 'admin4aocinc'
+    Aocinc_passwd = 'jobs@aocinc'
+    if request.method == 'POST':
+        adminName = request.POST.get('admin_name')
+        admin_pwd = request.POST.get('admin_password') 
+        # print(adminName,admin_pwd,'<<<<<<<<<<<')
+        if Aocinc_admin == adminName and Aocinc_passwd == admin_pwd:
+            return redirect('Jobs_Upload')  
+        else:
+            messages.warning(request,'User name or password is incorrect.')
+            return redirect('Jobs_List')
     context  = {
         'JobList':JobList,
         'today':today,
