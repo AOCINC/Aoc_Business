@@ -7,6 +7,8 @@ from django.db.models import Q
 from Aoc_Business_LandingApp.Email_Config import EMAIL_HOST_USER
 from django.template.loader import get_template
 from django.core.mail import EmailMessage
+import requests
+import json
 
 
 def Job_UploadsView(request):
