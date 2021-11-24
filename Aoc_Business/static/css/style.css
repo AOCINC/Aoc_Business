@@ -1102,6 +1102,67 @@ html {
 
 }
 
+/* comapany maangement  */
+#ourleaders{
+    padding: 1%;
+    -moz-box-shadow: 0 0 10px rgb(78, 75, 75);
+    -webkit-box-shadow: 0 0 10px rgb(114, 110, 110);
+    box-shadow: 0 0 10px rgb(109, 108, 108);
+}
+#company-handler1 img{
+    /* height:400px; */
+    /* width:49%; */
+    height:400px;
+    
+}
+#company-handler1 img:hover{
+    -moz-box-shadow: 0 0 20px rgb(78, 75, 75);
+    -webkit-box-shadow: 0 0 20px rgb(114, 110, 110);
+    box-shadow: 0 0 20px rgb(109, 108, 108);
+    cursor: pointer;
+}
+
+#company-handler2 img{
+    width:45%;
+    height:400px;
+}
+@media screen and (min-device-width : 320px)
+              and (max-device-width : 480px){ 
+                #company-handler2 img{
+                    width: 67%;
+                    margin-top: 2%;
+
+ }
+}
+#company-handler2 img:hover{
+    -moz-box-shadow: 0 0 20px rgb(78, 75, 75);
+      -webkit-box-shadow: 0 0 20px rgb(114, 110, 110);
+      box-shadow: 0 0 20px rgb(109, 108, 108);
+}
+#company-handlerMODAL {
+    background-color:rgb(34, 33, 33);
+    color:#fff;
+}
+#company-handlerMODAL span{
+    text-align: center;
+
+}
+#company-handlerModal1{
+    height:200px;
+    border-radius:20px;
+    margin-left: 5%;
+
+
+}
+#aocModal-Header{
+    background: rgb(34, 33, 33);
+    color:#fff;
+}
+#close-btn{
+    color:#fff;
+}
+/* comapany maangement end */
+
 /* about us end */
 
 /* schedule meeting  */
