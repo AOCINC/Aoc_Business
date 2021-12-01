@@ -1,0 +1,53 @@
+{% extends 'Aoc_Business_LandingApp/base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<br><br><br><br><br><br>
+<!-- message -->
+{% if messages %}
+{% for message in messages %}
+<div class="container">
+    <div class="row d-flex justify-content-center">
+    <div class="alert alert-danger d-flex justify-content-center" role="alert" id="JobMsg">
+    <p class="animate__animated animate__headShake">{{ message }} </p>
+</div>
+</div>
+</div>
+{% endfor %}
+{% endif %}
+<!-- message -->
+
+<div class="container">
+    <div class="row d-flex justify-content-center">
+        <div class="col-sm-6" id="jobApply">
+        <legend> <b> </b></legend> <br>
+        <form method="POST" enctype="multipart/form-data" novalidate>
+        {% csrf_token %}            
+        <div class="form-group">
+          <label for="exampleInputEmail1">Name</label>
+          <input type="text" name = "user_name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Name">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" name="user_email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Phone</label>
+          <input type="text" name="user_phone" class="form-control" id="exampleInputPassword1" placeholder="Phone Number">
+        </div>
+         <!-- cv upload -->
+         <label for="Resume">Upload CV</label><br>
+         <input type="file" name="JobFile">
+       <!-- cv upload -->
+       <br><br>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      </div>
+      </div>
+
+</div>
+<!-- form div -->
+<!-- form div -->
+{% endblock %}

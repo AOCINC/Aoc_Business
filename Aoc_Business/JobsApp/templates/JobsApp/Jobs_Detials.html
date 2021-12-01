@@ -27,7 +27,7 @@
         </div>
         <div class="modal-body">
           <!-- personal info -->
-          <form method="post" enctype="multipart/form-data" novalidate>
+          <form method="post"  name="ApplyForm" onsubmit="return validateForm()" enctype="multipart/form-data" novalidate>
               {% csrf_token %}
             <div class="form-group">
               <label for="exampleInputEmail1">Name</label>
@@ -70,7 +70,8 @@
                     <h5 class="card-title">{{ JobDetail.Designation|upper }}</h5>
                     <p class="card-text text-secondary font-weight-bold"><i class="fas fa-industry"></i> {{ JobDetail.Client_Name|upper}}</p>
                     <p class="card-text text-secondary"><i class="fas fa-wallet"></i> {{ JobDetail.Salary_LPA }}</p>
-                    <a href="#"  id="jobDetail-Apply" class="btn btn" data-toggle="modal" data-target="#exampleModal">Apply</a> <hr>
+                    <!-- <a href="#"  id="jobDetail-Apply" class="btn btn" data-toggle="modal" data-target="#exampleModal">Apply</a> <hr> -->
+                    <a href="{% url 'Job_Apply' %}"  id="jobDetail-Apply" class="btn btn">Apply</a> <hr>
                     <p class="card-text text-secondary"> Posted on:  {{ JobDetail.Posted_On|date }} </p>
                 </div>
             </div>        
