@@ -5,6 +5,18 @@
 {% block content %}
 <br><br><br><br>
 <br>
+<!-- delete jobs naviagation -->
+<div class="container">
+<legend >
+    <a class="btn btn-danger" href="{% url 'deletelist' %}">
+    <i class="far fa-trash-alt"></i>
+        Delete Job
+    </a>
+</legend>
+<small>By Clicking above Delete Button Your Will redirect to listed jobs to delete older posted job.</small>
+</div>
+<br>
+<!-- delete jobs naviagation -->
 <!-- form div -->
 <div class="container" id="JobUpload">
 <h2 class="text-center"> <strong>Jobs Upload </strong> </h2>
@@ -43,5 +55,6 @@
 </form>
 </div>
 <!-- form div -->
+<!--  -->
 <br><br><br>
 {% endblock %}

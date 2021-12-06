@@ -1,0 +1,54 @@
+{% extends 'Aoc_Business_LandingApp/base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<br><br><br><br><br>
+<!-- message -->
+{% if messages %}
+{% for message in messages %}
+<div class="alert alert-secondary container" role="alert" id="JobMsg">
+    <p class ="animate__animated animate__headShake">{{ message }} </p>
+</div>
+{% endfor %}
+{% endif %}
+
+<!-- message -->
+
+
+<!-- jobs list to delete job -->
+<div class="container py-3">
+    <!-- <h2>Jobs</h2>
+    <hr>
+    <br> -->
+    <div class="row">
+        {% for p in JobList %}
+        <div class="col-sm-12 col-md-6 col-lg-4 pb-4" id="jobCard">
+            <div class="card h-100" style="border:none">
+                <!-- <img src="{{ p.product_image.url }}" class="card-img-top" alt="{{ p.product_name}}"> -->
+                <div class="card-body">
+                    <h5 class="card-title">{{ p.Designation }}</h5>
+                    <p class="card-text text-muted" style="font-size:12px"> <i class="fas fa-map-marker-alt"></i> {{ p.Location }}</p>
+                    <p class="card-text text-muted" style="font-size:12px"> <i class="fas fa-suitcase"></i> {{ p.Experience }} Yrs</p>
+                    <p class="card-text text-muted" style="font-size:12px"> <i class="fas fa-industry"></i> Industry -{{ p.Industry}} </p>
+                    <p class="card-text text-muted" style="font-size:12px"> <i class="far fa-dot-circle"></i> Functional Area - {{ p.Functional_Area}} </p>
+                    <p class="card-text text-danger" style="font-size:12px;"> <i class="fas fa-history"></i> {{ p.Posted_On |timesince }} Ago  </p>
+                    <!-- <p class="card-text text-danger" style="font-size:12px;"> <i class="fas fa-history"></i> {{ p.Posted_On|timesince }}  </p> -->
+                    <br>
+                    <div class="d-flex justify-content-center">
+                        <a id="" href="deletejob/{{ p.id }}" class="btn btn-danger btn-block"> Delete</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+
+
+
+
+<!-- jobs list to delete job -->
+<br><br><br>
+{% endblock %}

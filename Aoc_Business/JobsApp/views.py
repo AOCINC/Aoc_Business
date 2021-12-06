@@ -4,7 +4,8 @@ from JobsApp.models import Job_Upload
 from JobsApp.forms import JobUpload_Form
 import datetime
 from django.db.models import Q
-from Aoc_Business_LandingApp.Email_Config import EMAIL_HOST_USER
+from Aoc_Business_LandingApp.Email_Config import (EMAIL_HOST_USER,AOC_INC_EMAIL1,
+                                                AOC_INC_EMAIL2)
 from django.template.loader import get_template
 from django.core.mail import EmailMessage
 import requests
@@ -159,7 +160,7 @@ def JobApply(request):
             'designation':designation,
         }
         from_email = EMAIL_HOST_USER
-        to         = [EMAIL_HOST_USER]
+        to         = [EMAIL_HOST_USER,AOC_INC_EMAIL1,AOC_INC_EMAIL2]
         message = get_template('JobsApp/Aocinc_Jobs_Mail.html').render(context)
         msg = EmailMessage(subject, message, to=to,from_email = from_email)
         msg.attach(JobFile.name, JobFile.read(), JobFile.content_type)                    # attaching a single file from the form to send it to mail as attachement.
@@ -183,3 +184,23 @@ def JobApply(request):
         # mail sending To Applied User Ends here
 
     return render(request,template)
+
+def list_delete_jobs(request):
+    template = 'JobsApp/delete_jobs.html'
+    JobList  = Job_Upload.objects.all().order_by('-id')
+    context  = {
+            'JobList':JobList,
+    }
+    return render(request,template,context)
+
+
+def delete_job(request,id):
+    template = 'JobsApp/job_delete_confirm.html'
+    job_id = Job_Upload.objects.get(id = id)
+    if request.method == 'POST':
+        job_id.delete()
+        messages.success(request,'job deleted successfully')
+        return redirect('deletelist')
+    return render(request,template)
+    
+    
