@@ -21,6 +21,7 @@ class JobUpload_Form(forms.ModelForm):
                     'Notice_Period',
                     'Openings',
                     'Role',
+                    'Freelancing'
                     # 'Posted_On',    
                 ]
         widgets = {

@@ -19,6 +19,7 @@ class Job_Upload(models.Model):
     Notice_Period = models.CharField(max_length = 250)
     Openings    = models.CharField(max_length = 250,default=1)
     Role        = models.CharField(max_length = 250,default='')
+    Freelancing = models.CharField(max_length = 250,default='No')
     Posted_On    = models.DateTimeField(default=timezone.now)
     
    

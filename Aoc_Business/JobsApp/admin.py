@@ -21,6 +21,7 @@ class Jobs_UploadAdmin(admin.ModelAdmin):
             'Notice_Period',
             'Openings',
             'Role',
+            'Freelancing',
             'Posted_On'
 
     ]

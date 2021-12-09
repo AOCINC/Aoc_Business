@@ -35,7 +35,7 @@ def JobsListView(request):
     if query:
         JobList = Job_Upload.objects.filter(
             Q(Designation__icontains = query.strip())
-        )
+        ).order_by('-id')
     if not Job_Upload.objects.filter(Designation__icontains = query).exists():
         messages.warning(request,'Your Searhed Result Not Found..')
     if query == '':
