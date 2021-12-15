@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- bootstrap/css -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <title>aocinc</title>
+    <!-- style -->
+    <style>
+        #maintenance img {
+            height:auto;
+            object-fit: contain;
+            max-width: 100%;            
+        }
+        #maintenance {
+            background: #8D3DAF;
+            /* padding: 10%; */
+        }
+        .back{
+            background: #9a09e2;
+            padding: 25%;
+            margin-bottom: -50%;
+        }
+
+    </style>
+    <!-- style -->
+</head>
+<body>
+    <div class="back">
+        
+    </div>
+    <div class="container" id="maintenance">
+        <img src="{% static 'images/coming_soon.jpg' %}" alt="something went wrong">
+    </div>
+</body>
+</html>
