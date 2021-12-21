@@ -20,6 +20,20 @@ class Job_Upload(models.Model):
     Openings    = models.CharField(max_length = 250,default=1)
     Role        = models.CharField(max_length = 250,default='')
     Freelancing = models.CharField(max_length = 250,default='No')
+    # NewFields Adding below..
+    Skill_Set       = models.CharField(max_length = 250,default=' ')
+    Offer_Type        = models.CharField(max_length = 250,default=' ')
+    Job_Skills_1    = models.TextField(default='')
+    Job_Skills_2    = models.TextField(default='')
+    Job_Skills_3    = models.TextField(default='')
+    Job_Skills_4    = models.TextField(default='')
+    About_Company_1 = models.TextField(default='')
+    About_Company_2 = models.TextField(default='')
+    About_Company_3 = models.TextField(default='')
+    Required_Skills_1 = models.TextField(default='')
+    Required_Skills_2 = models.TextField(default='')
+    Required_Skills_3 = models.TextField(default='')
+    Required_Skills_4 = models.TextField(default='')
     Posted_On    = models.DateTimeField(default=timezone.now)
     
    

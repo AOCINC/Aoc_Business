@@ -21,7 +21,21 @@ class JobUpload_Form(forms.ModelForm):
                     'Notice_Period',
                     'Openings',
                     'Role',
-                    'Freelancing'
+                    'Freelancing',
+                    # Newfields Adding below.
+                    'Skill_Set',
+                    'Offer_Type',
+                    'Job_Skills_1',
+                    'Job_Skills_2',
+                    'Job_Skills_3',
+                    'Job_Skills_4',
+                    'About_Company_1',
+                    'About_Company_2',
+                    'About_Company_3',
+                    'Required_Skills_1',
+                    'Required_Skills_2',
+                    'Required_Skills_3',
+                    'Required_Skills_4',
                     # 'Posted_On',    
                 ]
         widgets = {
@@ -29,5 +43,16 @@ class JobUpload_Form(forms.ModelForm):
         'Job_Description1': forms.Textarea(attrs={'rows':1, 'cols':15}),
         'Job_Description2': forms.Textarea(attrs={'rows':1, 'cols':15}),
         'Job_Description3': forms.Textarea(attrs={'rows':1, 'cols':15}),
+        'Job_Skills_1': forms.Textarea(attrs={'rows':1, 'cols':15}),
+        'Job_Skills_2': forms.Textarea(attrs={'rows':1, 'cols':15}),
+        'Job_Skills_3': forms.Textarea(attrs={'rows':1, 'cols':15}),
+        'Job_Skills_4': forms.Textarea(attrs={'rows':1, 'cols':15}),
+        'About_Company_1': forms.Textarea(attrs={'rows':1, 'cols':15}),
+        'About_Company_2': forms.Textarea(attrs={'rows':1, 'cols':15}),
+        'About_Company_3': forms.Textarea(attrs={'rows':1, 'cols':15}),
+        'Required_Skills_1': forms.Textarea(attrs={'rows':1, 'cols':15}),
+        'Required_Skills_2': forms.Textarea(attrs={'rows':1, 'cols':15}),
+        'Required_Skills_3': forms.Textarea(attrs={'rows':1, 'cols':15}),
+        'Required_Skills_4': forms.Textarea(attrs={'rows':1, 'cols':15}),
         }
         
